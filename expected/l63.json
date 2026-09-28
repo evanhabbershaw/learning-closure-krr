@@ -1,0 +1,114 @@
+[
+  {
+    "case_id": "l63-rbf-rk4-cubic-n512",
+    "mean": 7.886323900000002,
+    "std": 0.5426324410992713,
+    "ddof": 1,
+    "source": "surviving historical per-model result summary"
+  },
+  {
+    "case_id": "l63-diffusion-maps-rk4-cubic-n512",
+    "mean": 8.17185096,
+    "std": 0.48494647471172675,
+    "ddof": 1,
+    "source": "surviving historical per-model result summary"
+  },
+  {
+    "case_id": "l63-rbf-rk4-cubic-n1024",
+    "mean": 7.475340600000001,
+    "std": 0.9587419690581612,
+    "ddof": 1,
+    "source": "surviving historical per-model result summary"
+  },
+  {
+    "case_id": "l63-diffusion-maps-rk4-cubic-n1024",
+    "mean": 7.426670160000001,
+    "std": 1.3807909247633943,
+    "ddof": 1,
+    "source": "surviving historical per-model result summary"
+  },
+  {
+    "case_id": "l63-rbf-rk4-cubic-n2048",
+    "mean": 8.001353360000001,
+    "std": 0.421646136756012,
+    "ddof": 1,
+    "source": "surviving historical per-model result summary"
+  },
+  {
+    "case_id": "l63-diffusion-maps-rk4-cubic-n2048",
+    "mean": 8.253479780000001,
+    "std": 0.4976848372290907,
+    "ddof": 1,
+    "source": "surviving historical per-model result summary"
+  },
+  {
+    "case_id": "l63-rbf-heun-n4096",
+    "mean": 4.17832688,
+    "std": 0.11653194095114779,
+    "ddof": 1,
+    "source": "surviving historical per-model result summary"
+  },
+  {
+    "case_id": "l63-rbf-rk4-quadratic-n4096",
+    "mean": 5.92421284,
+    "std": 0.09804984908888867,
+    "ddof": 1,
+    "source": "surviving historical per-model result summary"
+  },
+  {
+    "case_id": "l63-rbf-rk4-cubic-n4096",
+    "mean": 7.968294880000001,
+    "std": 0.4844023123672876,
+    "ddof": 1,
+    "source": "surviving historical per-model result summary"
+  },
+  {
+    "case_id": "l63-rbf-rk4-quartic-n4096",
+    "mean": 8.347719380000001,
+    "std": 0.6611502742942247,
+    "ddof": 1,
+    "source": "surviving historical per-model result summary"
+  },
+  {
+    "case_id": "l63-rbf-rk4-quintic-n4096",
+    "mean": 8.4532994,
+    "std": 0.7000804563731993,
+    "ddof": 1,
+    "source": "surviving historical per-model result summary"
+  },
+  {
+    "case_id": "l63-diffusion-maps-heun-n4096",
+    "mean": 4.19691636,
+    "std": 0.07988549477839695,
+    "ddof": 1,
+    "source": "surviving historical per-model result summary"
+  },
+  {
+    "case_id": "l63-diffusion-maps-rk4-quadratic-n4096",
+    "mean": 5.987406880000001,
+    "std": 0.08678409614573923,
+    "ddof": 1,
+    "source": "surviving historical per-model result summary"
+  },
+  {
+    "case_id": "l63-diffusion-maps-rk4-cubic-n4096",
+    "mean": 8.381487660000001,
+    "std": 0.33212518358623017,
+    "ddof": 1,
+    "source": "surviving historical per-model result summary"
+  },
+  {
+    "case_id": "l63-diffusion-maps-rk4-quartic-n4096",
+    "mean": 8.483202,
+    "std": 0.4909966895145242,
+    "ddof": 1,
+    "source": "surviving historical per-model result summary"
+  },
+  {
+    "case_id": "l63-diffusion-maps-rk4-quintic-n4096",
+    "mean": 8.650545540000001,
+    "std": 0.5238920570802178,
+    "ddof": 1,
+    "source": "surviving historical per-model result summary"
+  }
+]

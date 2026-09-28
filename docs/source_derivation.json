@@ -1,0 +1,622 @@
+[
+  {
+    "destination": "problems/l63/src/dm_main.py",
+    "source_name": "dm_main.py",
+    "source_sha256": "a1bd16abd5166cfbde8a2b9441ba40288e55834c8d50717996898945fa64a6be",
+    "adaptation": "Relative imports; KS numerical class naming; public KRR metadata identity where applicable. Numerical bodies retained."
+  },
+  {
+    "destination": "problems/l63/src/krr_model.py",
+    "source_name": "krr_model.py",
+    "source_sha256": "601ef01140213cae4a4adcb82bccc6f5d8b93fe2f59d2138d60c3c857fa2fed0",
+    "adaptation": "Relative imports; KS numerical class naming; public KRR metadata identity where applicable. Numerical bodies retained."
+  },
+  {
+    "destination": "problems/ks/src/dm_main.py",
+    "source_name": "dm_main.py",
+    "source_sha256": "2fa879f6c522ee330d1e83f774d2e628e572ae3528de321b4ae08facde78e139",
+    "adaptation": "Relative imports; KS numerical class naming; public KRR metadata identity where applicable. Numerical bodies retained."
+  },
+  {
+    "destination": "problems/ks/src/krr_model.py",
+    "source_name": "krr_model.py",
+    "source_sha256": "fa51c309ff5854c7cbf5a004e31387fd7b9595cac7b27e6830fdd88c73e59dfa",
+    "adaptation": "Relative imports; KS numerical class naming; public KRR metadata identity where applicable. Numerical bodies retained."
+  },
+  {
+    "destination": "problems/ks/src/ks_forced_etdrk4_stepper.py",
+    "source_name": "ks_forced_etdrk4_stepper.py",
+    "source_sha256": "0cb137bfc8c2e88670407e398d6c0a64f338464960537d461a4fdf5fa7b2e4b7",
+    "adaptation": "Relative imports; KS numerical class naming; public KRR metadata identity where applicable. Numerical bodies retained."
+  },
+  {
+    "destination": "problems/kinetic/kinetic_closure/discrete_maxwellian.py",
+    "source_name": "discrete_maxwellian.py",
+    "source_sha256": "3e6970b87b71f203054eda4e77fb52e58a57de9fa2eb0e373e0a4e4f3f116351",
+    "adaptation": "Relative imports; KS numerical class naming; public KRR metadata identity where applicable. Numerical bodies retained."
+  },
+  {
+    "destination": "problems/kinetic/kinetic_closure/equilibrium.py",
+    "source_name": "equilibrium.py",
+    "source_sha256": "f8e834e6ff4801dbdba637818e59cd9cc886580f0994fe9824ec8fa3e9f2534e",
+    "adaptation": "Relative imports; KS numerical class naming; public KRR metadata identity where applicable. Numerical bodies retained."
+  },
+  {
+    "destination": "problems/kinetic/kinetic_closure/macroscopic_fv.py",
+    "source_name": "macroscopic_fv.py",
+    "source_sha256": "09a00b1e2bd3e6accff0cf3ee9763f3cf5abd8ea9af15fe56bdf7eba7ffc955a",
+    "adaptation": "Relative imports; KS numerical class naming; public KRR metadata identity where applicable. Numerical bodies retained."
+  },
+  {
+    "destination": "problems/kinetic/kinetic_closure/macroscopic_observables.py",
+    "source_name": "macroscopic_observables.py",
+    "source_sha256": "2d1bb50cf388c2906d5eecccd487a467b5ef5170e3ce83967c7e832c32194451",
+    "adaptation": "Relative imports; KS numerical class naming; public KRR metadata identity where applicable. Numerical bodies retained."
+  },
+  {
+    "destination": "problems/kinetic/kinetic_closure/sbgk_advection.py",
+    "source_name": "sbgk_advection.py",
+    "source_sha256": "66f8c584f5e589cd8388c9671b3052c0e78cdc1c9a6b26ccbfbfb192ca81a637",
+    "adaptation": "Relative imports; KS numerical class naming; public KRR metadata identity where applicable. Numerical bodies retained."
+  },
+  {
+    "destination": "problems/kinetic/kinetic_closure/sbgk_butcher.py",
+    "source_name": "sbgk_butcher.py",
+    "source_sha256": "fdaa1519278f71337a192e411a64d7fbfc8e12aa53cf8ebd846c9dd5a8d0f3f4",
+    "adaptation": "Relative imports; KS numerical class naming; public KRR metadata identity where applicable. Numerical bodies retained."
+  },
+  {
+    "destination": "problems/kinetic/kinetic_closure/sbgk_grid.py",
+    "source_name": "sbgk_grid.py",
+    "source_sha256": "47b84cb8021c6cb2a49fb84a81623035956a815cb544859935ad6d51495566f8",
+    "adaptation": "Relative imports; KS numerical class naming; public KRR metadata identity where applicable. Numerical bodies retained."
+  },
+  {
+    "destination": "problems/kinetic/kinetic_closure/sbgk_imex.py",
+    "source_name": "sbgk_imex.py",
+    "source_sha256": "06d460a00458fe337bb71e16ef934750fed83a51310cf88527890cb085043920",
+    "adaptation": "Relative imports; KS numerical class naming; public KRR metadata identity where applicable. Numerical bodies retained."
+  },
+  {
+    "destination": "problems/kinetic/kinetic_closure/sbgk_initial_conditions.py",
+    "source_name": "sbgk_initial_conditions.py",
+    "source_sha256": "5f916c6ae59e6c3a48c04a4d6381078c9a9f744f9c11afb02570cd97c45f84f9",
+    "adaptation": "Relative imports; KS numerical class naming; public KRR metadata identity where applicable. Numerical bodies retained."
+  },
+  {
+    "destination": "problems/kinetic/kinetic_closure/sbgk_maxwellian.py",
+    "source_name": "sbgk_maxwellian.py",
+    "source_sha256": "722a60cd033d8875b57b11907816b6ba7232413d69863e235742c0887311a712",
+    "adaptation": "Relative imports; KS numerical class naming; public KRR metadata identity where applicable. Numerical bodies retained."
+  },
+  {
+    "destination": "problems/kinetic/kinetic_closure/sbgk_moments.py",
+    "source_name": "sbgk_moments.py",
+    "source_sha256": "3e74ea30c7065ff4065e1b4fc34f85fd772cf7611481838b66b62ea43c84ba90",
+    "adaptation": "Relative imports; KS numerical class naming; public KRR metadata identity where applicable. Numerical bodies retained."
+  },
+  {
+    "destination": "problems/kinetic/kinetic_closure/final_learning_krr_20260920_v1.py",
+    "source_name": "final_learning_krr_20260920_v1.py",
+    "source_sha256": "02693209f51904bb00355c5bad68d44381d8504b8dd502a1709e2e85089377e3",
+    "adaptation": "Relative imports; KS numerical class naming; public KRR metadata identity where applicable. Numerical bodies retained."
+  },
+  {
+    "destination": "problems/l63/reference.py",
+    "source_name": "dg_l63.py",
+    "source_sha256": "788400e1ef54ab1fab6945500d942c2a3e1ac3b0e0fca54728aae5ca775ce360",
+    "functions": [
+      {
+        "name": "L63",
+        "start": 6,
+        "end": 12
+      },
+      {
+        "name": "rk4_step",
+        "start": 15,
+        "end": 20
+      },
+      {
+        "name": "generate_trajectory",
+        "start": 22,
+        "end": 29
+      },
+      {
+        "name": "gen_data",
+        "start": 37,
+        "end": 51
+      }
+    ],
+    "adaptation": "Extracted numerical definitions; explicit imports and public orchestration. See assembly report."
+  },
+  {
+    "destination": "problems/l63/experiment.py",
+    "source_name": "lorenz_test_case_case3.py",
+    "source_sha256": "c692adf34706a8b2bb99c23a8c6dec43632eb57120f0d92cadf7559569947cc6",
+    "functions": [
+      {
+        "name": "free_gpu_memory",
+        "start": 40,
+        "end": 58
+      },
+      {
+        "name": "batched_compute_inner_cv",
+        "start": 90,
+        "end": 161
+      }
+    ],
+    "adaptation": "Retained validation arithmetic; literal validation offsets and other experiment constants supplied by the public pipeline; top-level execution/private I/O removed."
+  },
+  {
+    "destination": "problems/ks/experiment.py",
+    "source_name": "panel_N16384_m0_in-v_thetaHat_raw_N16384_E13_L13_m0_diffusion_mdl10_test50.py",
+    "source_sha256": "9544d364fa1567d84465ba3916271c8433632bfb3684cea192aa59cd78de9751",
+    "functions": [
+      {
+        "name": "TimingRecorder",
+        "start": 40,
+        "end": 60
+      },
+      {
+        "name": "record_timing",
+        "start": 63,
+        "end": 65
+      },
+      {
+        "name": "maybe_sync_gpu",
+        "start": 84,
+        "end": 86
+      },
+      {
+        "name": "free_gpu_memory",
+        "start": 89,
+        "end": 93
+      },
+      {
+        "name": "compute_distance_matrix",
+        "start": 112,
+        "end": 125
+      },
+      {
+        "name": "real12_from_pos_modes",
+        "start": 128,
+        "end": 137
+      },
+      {
+        "name": "real12_from_complex6_np",
+        "start": 139,
+        "end": 149
+      },
+      {
+        "name": "real12_from_complex6_cp",
+        "start": 151,
+        "end": 161
+      },
+      {
+        "name": "complex7_from_real12_cp",
+        "start": 163,
+        "end": 175
+      },
+      {
+        "name": "real12_from_state_cp",
+        "start": 177,
+        "end": 188
+      },
+      {
+        "name": "MinMaxPM1Scaler",
+        "start": 196,
+        "end": 252
+      },
+      {
+        "name": "IdentityScaler",
+        "start": 259,
+        "end": 283
+      },
+      {
+        "name": "ZScoreScaler",
+        "start": 290,
+        "end": 350
+      },
+      {
+        "name": "make_scaler_from_mode",
+        "start": 356,
+        "end": 367
+      },
+      {
+        "name": "build_raw_memory_input",
+        "start": 469,
+        "end": 502
+      },
+      {
+        "name": "build_scaled_memory_input",
+        "start": 504,
+        "end": 560
+      },
+      {
+        "name": "build_train_pairs_general",
+        "start": 562,
+        "end": 639
+      },
+      {
+        "name": "make_memory_input_from_histories",
+        "start": 766,
+        "end": 822
+      },
+      {
+        "name": "get_vpt_learned_batch",
+        "start": 1053,
+        "end": 1213
+      },
+      {
+        "name": "get_vpt_learned_multipoint_single",
+        "start": 1215,
+        "end": 1361
+      },
+      {
+        "name": "batched_compute_inner_cv",
+        "start": 1693,
+        "end": 1950
+      },
+      {
+        "name": "audit_train_pair_alignment",
+        "start": 2086,
+        "end": 2199
+      }
+    ],
+    "adaptation": "Retained numerical definitions and required helper closure; numerical stepper renamed; unsupported inactive PCA/check branches removed; explicit pipeline configuration replaces main block."
+  },
+  {
+    "destination": "problems/kinetic/protocol.py",
+    "source_name": "final_protocol_20260920_v2.py",
+    "source_sha256": "2b372ecbdabe9d035610b51016641d1c0cb38c4871fce826eab720472714d5a1",
+    "functions": [
+      {
+        "name": "ProtocolError",
+        "start": 35,
+        "end": 36
+      },
+      {
+        "name": "require",
+        "start": 43,
+        "end": 45
+      },
+      {
+        "name": "canonical",
+        "start": 48,
+        "end": 49
+      },
+      {
+        "name": "digest",
+        "start": 52,
+        "end": 53
+      },
+      {
+        "name": "sha256",
+        "start": 56,
+        "end": 61
+      },
+      {
+        "name": "read_csv",
+        "start": 68,
+        "end": 70
+      },
+      {
+        "name": "global_times",
+        "start": 80,
+        "end": 86
+      },
+      {
+        "name": "normalization_contract",
+        "start": 238,
+        "end": 243
+      },
+      {
+        "name": "pca_contract",
+        "start": 246,
+        "end": 251
+      },
+      {
+        "name": "local_order",
+        "start": 254,
+        "end": 257
+      },
+      {
+        "name": "local_candidates",
+        "start": 260,
+        "end": 272
+      },
+      {
+        "name": "local_features",
+        "start": 275,
+        "end": 284
+      },
+      {
+        "name": "feature_key",
+        "start": 287,
+        "end": 291
+      },
+      {
+        "name": "select_unique",
+        "start": 294,
+        "end": 324
+      },
+      {
+        "name": "center_plan",
+        "start": 327,
+        "end": 332
+      },
+      {
+        "name": "selection_gate",
+        "start": 408,
+        "end": 426
+      }
+    ],
+    "adaptation": "Extracted numerical definitions; explicit imports and public orchestration. See assembly report."
+  },
+  {
+    "destination": "problems/kinetic/preprocessing.py",
+    "source_name": "final_protocol_data_20260920_v2.py",
+    "source_sha256": "b9705ce7270f31db9eb069fff1cec25098330b26b90e1f01fa2f82f1824ba495",
+    "functions": [
+      {
+        "name": "Moments",
+        "start": 188,
+        "end": 209
+      },
+      {
+        "name": "complete_pca",
+        "start": 230,
+        "end": 244
+      }
+    ],
+    "adaptation": "Moment merge and PCA definitions extracted; explicit frozen-membership loaders, local/global center construction and fixed-baseline residual targets derived from the same source and final validation numerics."
+  },
+  {
+    "destination": "problems/kinetic/stage_fluxes.py",
+    "source_name": "benchmark_true_kinetic_flux_oracle.py",
+    "source_sha256": "0a515d3a69f36d7cd466a2b46b6ade29c6e52225145acc0bf2121fc9ab842884",
+    "functions": [
+      {
+        "name": "compute_step_stage_data",
+        "start": 281,
+        "end": 323
+      },
+      {
+        "name": "distribution_moments",
+        "start": 326,
+        "end": 334
+      },
+      {
+        "name": "stage_sum_distributions",
+        "start": 341,
+        "end": 345
+      }
+    ],
+    "adaptation": "Extracted numerical definitions; explicit imports and public orchestration. See assembly report."
+  },
+  {
+    "destination": "problems/kinetic/macro_closure.py",
+    "source_name": "run_effective_flux_augmented_dynamics_krr_pilot.py",
+    "source_sha256": "b0c2d63a0a96b6f4859b847219be321eff2df47b29999440cb285f09481870e9",
+    "functions": [
+      {
+        "name": "macro_effective_flux_state",
+        "start": 106,
+        "end": 109
+      }
+    ],
+    "adaptation": "Extracted numerical definitions; explicit imports and public orchestration. See assembly report."
+  },
+  {
+    "destination": "problems/kinetic/selection.py",
+    "source_name": "validation_policy_20260922.py",
+    "source_sha256": "f32a7af01c432ce3f07a92d5558cd8d0a3d6676c4481e1a1c962193660be4aad",
+    "functions": [
+      {
+        "name": "initial_grids",
+        "start": 33,
+        "end": 35
+      },
+      {
+        "name": "candidates",
+        "start": 38,
+        "end": 50
+      },
+      {
+        "name": "epsilon_tasks",
+        "start": 53,
+        "end": 61
+      },
+      {
+        "name": "condition_boundary",
+        "start": 90,
+        "end": 106
+      },
+      {
+        "name": "assess",
+        "start": 109,
+        "end": 117
+      },
+      {
+        "name": "expand",
+        "start": 120,
+        "end": 132
+      }
+    ],
+    "adaptation": "Extracted numerical definitions; explicit imports and public orchestration. See assembly report."
+  },
+  {
+    "destination": "configs/paper/kinetic/training_manifest.csv",
+    "source_name": "training_manifest.csv",
+    "source_sha256": "0094a5d19b32cbd36dfd05808ee3b05bef08274f301943f3cae42b8b3d71f48a",
+    "adaptation": "Scientific membership/IC columns only; private source inventory columns excluded."
+  },
+  {
+    "destination": "configs/paper/kinetic/validation_manifest.csv",
+    "source_name": "validation_manifest.csv",
+    "source_sha256": "e18025456138b6d8cf45d195efb7f01410306a8ce2de1ef45d5216a92434aa69",
+    "adaptation": "Scientific membership/IC columns only; private source inventory columns excluded."
+  },
+  {
+    "destination": "configs/paper/kinetic/protected_membership_manifest.csv",
+    "source_name": "protected_membership_manifest.csv",
+    "source_sha256": "7f7625ccae20fe57a8b5cae245fedb9f10c03e435cbf205d1bea07d5a6954c18",
+    "adaptation": "Scientific membership/IC columns only; private source inventory columns excluded."
+  },
+  {
+    "destination": "configs/paper/kinetic/global_time_indices_114.csv",
+    "source_name": "global_time_indices_114.csv",
+    "source_sha256": "2a039ca3ae0716960e2359268595e85868db17aeba59d328c2224392f2c6a213",
+    "adaptation": "Exact copy."
+  },
+  {
+    "destination": "configs/paper/kinetic/global_time_indices_57.csv",
+    "source_name": "global_time_indices_57.csv",
+    "source_sha256": "d99123f3456ef8a01e547db270d9bdaf6263b3df2a4c150f1944b0a05cca2f18",
+    "adaptation": "Exact copy."
+  },
+  {
+    "destination": "expected/l63.json",
+    "source_name": "l63_summary.csv",
+    "source_sha256": "089be86d4db16d0c81d9defc14a8afc82ac8a153955495537829b948171ea379",
+    "adaptation": "16 paper groups only; mean and sample SD of ten surviving per-model means; no audit diagnostic fields."
+  },
+  {
+    "destination": "expected/ks.json",
+    "source_name": "ks_vpt_scaling_m0_publication.csv",
+    "source_sha256": "ebc78be3b5c8f6ebd399d38304468dfc67d23e31b6eab3d1c164ca3aea196295",
+    "adaptation": "KRR columns only; source paths and external neural comparison rows excluded."
+  },
+  {
+    "destination": "expected/ks.json",
+    "source_name": "ks_vpt_scaling_m1_publication.csv",
+    "source_sha256": "875350402f6f649b3105afed16c36b2186d57eb1820a7f387c5e09ffee14a94f",
+    "adaptation": "KRR columns only; source paths and external neural comparison rows excluded."
+  },
+  {
+    "destination": "problems/kinetic/data.py",
+    "origins": [
+      {
+        "source_name": "final_protocol_data_20260920_v2.py",
+        "source_sha256": "b9705ce7270f31db9eb069fff1cec25098330b26b90e1f01fa2f82f1824ba495"
+      },
+      {
+        "source_name": "generate_kinetic_flux_dynamics_family.py",
+        "source_sha256": "4204f928a87100bf1e4cc3dfcba0438f84f349b95ef3240aff5b05dd24d96135"
+      }
+    ],
+    "adaptation": "Public IC generation and stage-weighted transport targets; reference equilibrium retained."
+  },
+  {
+    "destination": "problems/kinetic/rollout.py",
+    "origins": [
+      {
+        "source_name": "training_range_numerics.py",
+        "source_sha256": "68ad9c94ec3a2badbb8494351d9b2b93ad9d7bc190e31eb89f9138b554e4bc33"
+      }
+    ],
+    "adaptation": "State/feature arithmetic retained; clean corrected-flux evolution per final mathematical formulation."
+  },
+  {
+    "destination": "problems/kinetic/fit.py",
+    "origins": [
+      {
+        "source_name": "validation_numerics_20260922.py",
+        "source_sha256": "0408173aeaa95b594f607ffb9a5ff446d21640758683b2a7a16e97a679db7cc8"
+      }
+    ],
+    "adaptation": "Canonical EVD solve-health policy and fixed baseline Cholesky; explicit array inputs."
+  },
+  {
+    "destination": "problems/kinetic/evaluate.py",
+    "origins": [
+      {
+        "source_name": "numerics.py",
+        "source_sha256": "c5771b7f7b4fea8728538f1a1cfaae95594901abc5e568ea256ab1699257ea0e"
+      },
+      {
+        "source_name": "final_protocol_20260920_v2.py",
+        "source_sha256": "2b372ecbdabe9d035610b51016641d1c0cb38c4871fce826eab720472714d5a1"
+      }
+    ],
+    "adaptation": "Four-field metrics; final ddof=0 per protected family override."
+  },
+  {
+    "destination": "problems/ks/data.py",
+    "origins": [
+      {
+        "source_name": "make_ks_aligned_phys14_dataset.py",
+        "source_sha256": "257676952f52820e7a4f0bfe4db2cce75908e35fdeadac39475e909f0b0dff50"
+      }
+    ],
+    "adaptation": "Aligned convolution and transforms extracted behind explicit paths; no import-time work."
+  },
+  {
+    "destination": "problems/l63/protocol.py",
+    "origins": [
+      {
+        "source_name": "make_l63_protocol_data.py",
+        "source_sha256": "712aae4bf8898e718b62c284db4598a18c7a44d87cf87b89560a6fdfa2cf7175"
+      }
+    ],
+    "adaptation": "Explicit raw-state protocol blocks and loaders."
+  },
+  {
+    "destination": "problems/l63/pipeline.py",
+    "origins": [
+      {
+        "source_name": "lorenz_test_case_case3.py",
+        "source_sha256": "c692adf34706a8b2bb99c23a8c6dec43632eb57120f0d92cadf7559569947cc6"
+      }
+    ],
+    "adaptation": "Public orchestrator around retained Modeler and validation arithmetic; literal candidate input."
+  },
+  {
+    "destination": "problems/ks/pipeline.py",
+    "origins": [
+      {
+        "source_name": "panel_N16384_m0_in-v_thetaHat_raw_N16384_E13_L13_m0_diffusion_mdl10_test50.py",
+        "source_sha256": "9544d364fa1567d84465ba3916271c8433632bfb3684cea192aa59cd78de9751"
+      }
+    ],
+    "adaptation": "Public orchestrator around extracted grouped eig validation and reduced ETDRK4 rollout."
+  },
+  {
+    "destination": "problems/kinetic/pipeline.py",
+    "origins": [
+      {
+        "source_name": "validation_numerics_20260922.py",
+        "source_sha256": "0408173aeaa95b594f607ffb9a5ff446d21640758683b2a7a16e97a679db7cc8"
+      },
+      {
+        "source_name": "training_range_numerics.py",
+        "source_sha256": "68ad9c94ec3a2badbb8494351d9b2b93ad9d7bc190e31eb89f9138b554e4bc33"
+      }
+    ],
+    "adaptation": "New selected-fit/replay interface with fixed baseline binding and final validation case."
+  },
+  {
+    "destination": "problems/kinetic/plotting.py",
+    "origins": [],
+    "adaptation": "New public comparison layouts from saved numerical arrays; not exact manuscript artwork."
+  },
+  {
+    "destination": "problems/l63/reporting.py",
+    "origins": [],
+    "adaptation": "New explicit saved-score reduction; L63 sample SD and KS population SD."
+  },
+  {
+    "destination": "scripts/kinetic_data.py",
+    "origins": [
+      {
+        "source_name": "final_protocol_data_20260920_v2.py",
+        "source_sha256": "b9705ce7270f31db9eb069fff1cec25098330b26b90e1f01fa2f82f1824ba495"
+      }
+    ],
+    "adaptation": "New explicit training/validation generation and center preparation interface."
+  },
+  {
+    "destination": "problems/ks/plotting.py",
+    "adaptation": "New saved-surface/spec12 renderers with public layouts; historical numerical arrays must be supplied; not original artwork."
+  }
+]

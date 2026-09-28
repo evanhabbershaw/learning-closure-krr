@@ -1,0 +1,2862 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "id": "l63-rbf-rk4-cubic-n512",
+      "problem": "l63",
+      "scientific": {
+        "backend": "cupy_cuda",
+        "reference_backend": "numpy_cpu",
+        "training_size": 512,
+        "kernel": "rbf",
+        "stage_reconstruction": "rk4_cubic",
+        "dt": 0.01,
+        "sigma": 10.0,
+        "rho": 28.0,
+        "beta": 2.6666666666666665,
+        "reference_seeds": [
+          22,
+          43
+        ],
+        "input": "raw_xyz",
+        "target": "next_z_increment",
+        "models": 10,
+        "training_starts": [
+          0,
+          20000,
+          40000,
+          60000,
+          80000,
+          100000,
+          120000,
+          140000,
+          160000,
+          180000
+        ],
+        "validation_length": 3000,
+        "validation_offsets": [
+          353,
+          314,
+          81
+        ],
+        "validation_horizon": 1500,
+        "test_trials": 500,
+        "test_horizon": 2500,
+        "error_threshold": 0.09,
+        "lyapunov_exponent": 0.91,
+        "summary_ddof": 1,
+        "precision": "float64",
+        "solver": "cholesky",
+        "candidate_count": 4096,
+        "candidates": "external_literal_schedule_per_model",
+        "input_scaling": "identity",
+        "candidate_chunk": 1,
+        "data_identity": "frozen_l63_protocol_bundle",
+        "selection": "maximum_validation_vpt_first_index_tie",
+        "protocol_bundle_sha256": "7c5ed13c95c57cd17d38277c41fc5cad98c2a48ae904d6053413a5f84f452f9f"
+      },
+      "publication_mapping": [
+        "Table 2"
+      ],
+      "backend": "cupy_cuda",
+      "supported_workflows": [
+        "reproduce",
+        "replay",
+        "render"
+      ],
+      "readiness": "requires_external_inputs_and_cuda",
+      "implementation_verification": "local_cpu_unit_tests_only",
+      "historical_identity_status": "not_certified_byte_identical"
+    },
+    {
+      "id": "l63-diffusion-maps-rk4-cubic-n512",
+      "problem": "l63",
+      "scientific": {
+        "backend": "cupy_cuda",
+        "reference_backend": "numpy_cpu",
+        "training_size": 512,
+        "kernel": "diffusion_maps",
+        "stage_reconstruction": "rk4_cubic",
+        "dt": 0.01,
+        "sigma": 10.0,
+        "rho": 28.0,
+        "beta": 2.6666666666666665,
+        "reference_seeds": [
+          22,
+          43
+        ],
+        "input": "raw_xyz",
+        "target": "next_z_increment",
+        "models": 10,
+        "training_starts": [
+          0,
+          20000,
+          40000,
+          60000,
+          80000,
+          100000,
+          120000,
+          140000,
+          160000,
+          180000
+        ],
+        "validation_length": 3000,
+        "validation_offsets": [
+          353,
+          314,
+          81
+        ],
+        "validation_horizon": 1500,
+        "test_trials": 500,
+        "test_horizon": 2500,
+        "error_threshold": 0.09,
+        "lyapunov_exponent": 0.91,
+        "summary_ddof": 1,
+        "precision": "float64",
+        "solver": "cholesky",
+        "candidate_count": 4096,
+        "candidates": "external_literal_schedule_per_model",
+        "input_scaling": "identity",
+        "candidate_chunk": 1,
+        "data_identity": "frozen_l63_protocol_bundle",
+        "selection": "maximum_validation_vpt_first_index_tie",
+        "protocol_bundle_sha256": "7c5ed13c95c57cd17d38277c41fc5cad98c2a48ae904d6053413a5f84f452f9f"
+      },
+      "publication_mapping": [
+        "Table 2"
+      ],
+      "backend": "cupy_cuda",
+      "supported_workflows": [
+        "reproduce",
+        "replay",
+        "render"
+      ],
+      "readiness": "requires_external_inputs_and_cuda",
+      "implementation_verification": "local_cpu_unit_tests_only",
+      "historical_identity_status": "not_certified_byte_identical"
+    },
+    {
+      "id": "l63-rbf-rk4-cubic-n1024",
+      "problem": "l63",
+      "scientific": {
+        "backend": "cupy_cuda",
+        "reference_backend": "numpy_cpu",
+        "training_size": 1024,
+        "kernel": "rbf",
+        "stage_reconstruction": "rk4_cubic",
+        "dt": 0.01,
+        "sigma": 10.0,
+        "rho": 28.0,
+        "beta": 2.6666666666666665,
+        "reference_seeds": [
+          22,
+          43
+        ],
+        "input": "raw_xyz",
+        "target": "next_z_increment",
+        "models": 10,
+        "training_starts": [
+          0,
+          20000,
+          40000,
+          60000,
+          80000,
+          100000,
+          120000,
+          140000,
+          160000,
+          180000
+        ],
+        "validation_length": 3000,
+        "validation_offsets": [
+          353,
+          314,
+          81
+        ],
+        "validation_horizon": 1500,
+        "test_trials": 500,
+        "test_horizon": 2500,
+        "error_threshold": 0.09,
+        "lyapunov_exponent": 0.91,
+        "summary_ddof": 1,
+        "precision": "float64",
+        "solver": "cholesky",
+        "candidate_count": 4096,
+        "candidates": "external_literal_schedule_per_model",
+        "input_scaling": "identity",
+        "candidate_chunk": 1,
+        "data_identity": "frozen_l63_protocol_bundle",
+        "selection": "maximum_validation_vpt_first_index_tie",
+        "protocol_bundle_sha256": "7c5ed13c95c57cd17d38277c41fc5cad98c2a48ae904d6053413a5f84f452f9f"
+      },
+      "publication_mapping": [
+        "Table 2"
+      ],
+      "backend": "cupy_cuda",
+      "supported_workflows": [
+        "reproduce",
+        "replay",
+        "render"
+      ],
+      "readiness": "requires_external_inputs_and_cuda",
+      "implementation_verification": "local_cpu_unit_tests_only",
+      "historical_identity_status": "not_certified_byte_identical"
+    },
+    {
+      "id": "l63-diffusion-maps-rk4-cubic-n1024",
+      "problem": "l63",
+      "scientific": {
+        "backend": "cupy_cuda",
+        "reference_backend": "numpy_cpu",
+        "training_size": 1024,
+        "kernel": "diffusion_maps",
+        "stage_reconstruction": "rk4_cubic",
+        "dt": 0.01,
+        "sigma": 10.0,
+        "rho": 28.0,
+        "beta": 2.6666666666666665,
+        "reference_seeds": [
+          22,
+          43
+        ],
+        "input": "raw_xyz",
+        "target": "next_z_increment",
+        "models": 10,
+        "training_starts": [
+          0,
+          20000,
+          40000,
+          60000,
+          80000,
+          100000,
+          120000,
+          140000,
+          160000,
+          180000
+        ],
+        "validation_length": 3000,
+        "validation_offsets": [
+          353,
+          314,
+          81
+        ],
+        "validation_horizon": 1500,
+        "test_trials": 500,
+        "test_horizon": 2500,
+        "error_threshold": 0.09,
+        "lyapunov_exponent": 0.91,
+        "summary_ddof": 1,
+        "precision": "float64",
+        "solver": "cholesky",
+        "candidate_count": 4096,
+        "candidates": "external_literal_schedule_per_model",
+        "input_scaling": "identity",
+        "candidate_chunk": 1,
+        "data_identity": "frozen_l63_protocol_bundle",
+        "selection": "maximum_validation_vpt_first_index_tie",
+        "protocol_bundle_sha256": "7c5ed13c95c57cd17d38277c41fc5cad98c2a48ae904d6053413a5f84f452f9f"
+      },
+      "publication_mapping": [
+        "Table 2"
+      ],
+      "backend": "cupy_cuda",
+      "supported_workflows": [
+        "reproduce",
+        "replay",
+        "render"
+      ],
+      "readiness": "requires_external_inputs_and_cuda",
+      "implementation_verification": "local_cpu_unit_tests_only",
+      "historical_identity_status": "not_certified_byte_identical"
+    },
+    {
+      "id": "l63-rbf-rk4-cubic-n2048",
+      "problem": "l63",
+      "scientific": {
+        "backend": "cupy_cuda",
+        "reference_backend": "numpy_cpu",
+        "training_size": 2048,
+        "kernel": "rbf",
+        "stage_reconstruction": "rk4_cubic",
+        "dt": 0.01,
+        "sigma": 10.0,
+        "rho": 28.0,
+        "beta": 2.6666666666666665,
+        "reference_seeds": [
+          22,
+          43
+        ],
+        "input": "raw_xyz",
+        "target": "next_z_increment",
+        "models": 10,
+        "training_starts": [
+          0,
+          20000,
+          40000,
+          60000,
+          80000,
+          100000,
+          120000,
+          140000,
+          160000,
+          180000
+        ],
+        "validation_length": 3000,
+        "validation_offsets": [
+          353,
+          314,
+          81
+        ],
+        "validation_horizon": 1500,
+        "test_trials": 500,
+        "test_horizon": 2500,
+        "error_threshold": 0.09,
+        "lyapunov_exponent": 0.91,
+        "summary_ddof": 1,
+        "precision": "float64",
+        "solver": "cholesky",
+        "candidate_count": 4096,
+        "candidates": "external_literal_schedule_per_model",
+        "input_scaling": "identity",
+        "candidate_chunk": 1,
+        "data_identity": "frozen_l63_protocol_bundle",
+        "selection": "maximum_validation_vpt_first_index_tie",
+        "protocol_bundle_sha256": "7c5ed13c95c57cd17d38277c41fc5cad98c2a48ae904d6053413a5f84f452f9f"
+      },
+      "publication_mapping": [
+        "Table 2"
+      ],
+      "backend": "cupy_cuda",
+      "supported_workflows": [
+        "reproduce",
+        "replay",
+        "render"
+      ],
+      "readiness": "requires_external_inputs_and_cuda",
+      "implementation_verification": "local_cpu_unit_tests_only",
+      "historical_identity_status": "not_certified_byte_identical"
+    },
+    {
+      "id": "l63-diffusion-maps-rk4-cubic-n2048",
+      "problem": "l63",
+      "scientific": {
+        "backend": "cupy_cuda",
+        "reference_backend": "numpy_cpu",
+        "training_size": 2048,
+        "kernel": "diffusion_maps",
+        "stage_reconstruction": "rk4_cubic",
+        "dt": 0.01,
+        "sigma": 10.0,
+        "rho": 28.0,
+        "beta": 2.6666666666666665,
+        "reference_seeds": [
+          22,
+          43
+        ],
+        "input": "raw_xyz",
+        "target": "next_z_increment",
+        "models": 10,
+        "training_starts": [
+          0,
+          20000,
+          40000,
+          60000,
+          80000,
+          100000,
+          120000,
+          140000,
+          160000,
+          180000
+        ],
+        "validation_length": 3000,
+        "validation_offsets": [
+          353,
+          314,
+          81
+        ],
+        "validation_horizon": 1500,
+        "test_trials": 500,
+        "test_horizon": 2500,
+        "error_threshold": 0.09,
+        "lyapunov_exponent": 0.91,
+        "summary_ddof": 1,
+        "precision": "float64",
+        "solver": "cholesky",
+        "candidate_count": 4096,
+        "candidates": "external_literal_schedule_per_model",
+        "input_scaling": "identity",
+        "candidate_chunk": 1,
+        "data_identity": "frozen_l63_protocol_bundle",
+        "selection": "maximum_validation_vpt_first_index_tie",
+        "protocol_bundle_sha256": "7c5ed13c95c57cd17d38277c41fc5cad98c2a48ae904d6053413a5f84f452f9f"
+      },
+      "publication_mapping": [
+        "Table 2"
+      ],
+      "backend": "cupy_cuda",
+      "supported_workflows": [
+        "reproduce",
+        "replay",
+        "render"
+      ],
+      "readiness": "requires_external_inputs_and_cuda",
+      "implementation_verification": "local_cpu_unit_tests_only",
+      "historical_identity_status": "not_certified_byte_identical"
+    },
+    {
+      "id": "l63-rbf-heun-n4096",
+      "problem": "l63",
+      "scientific": {
+        "backend": "cupy_cuda",
+        "reference_backend": "numpy_cpu",
+        "training_size": 4096,
+        "kernel": "rbf",
+        "stage_reconstruction": "heun",
+        "dt": 0.01,
+        "sigma": 10.0,
+        "rho": 28.0,
+        "beta": 2.6666666666666665,
+        "reference_seeds": [
+          22,
+          43
+        ],
+        "input": "raw_xyz",
+        "target": "next_z_increment",
+        "models": 10,
+        "training_starts": [
+          0,
+          20000,
+          40000,
+          60000,
+          80000,
+          100000,
+          120000,
+          140000,
+          160000,
+          180000
+        ],
+        "validation_length": 3000,
+        "validation_offsets": [
+          353,
+          314,
+          81
+        ],
+        "validation_horizon": 1500,
+        "test_trials": 500,
+        "test_horizon": 2500,
+        "error_threshold": 0.09,
+        "lyapunov_exponent": 0.91,
+        "summary_ddof": 1,
+        "precision": "float64",
+        "solver": "cholesky",
+        "candidate_count": 4096,
+        "candidates": "external_literal_schedule_per_model",
+        "input_scaling": "identity",
+        "candidate_chunk": 1,
+        "data_identity": "frozen_l63_protocol_bundle",
+        "selection": "maximum_validation_vpt_first_index_tie",
+        "protocol_bundle_sha256": "7c5ed13c95c57cd17d38277c41fc5cad98c2a48ae904d6053413a5f84f452f9f"
+      },
+      "publication_mapping": [
+        "Table 1"
+      ],
+      "backend": "cupy_cuda",
+      "supported_workflows": [
+        "reproduce",
+        "replay",
+        "render"
+      ],
+      "readiness": "requires_external_inputs_and_cuda",
+      "implementation_verification": "local_cpu_unit_tests_only",
+      "historical_identity_status": "not_certified_byte_identical"
+    },
+    {
+      "id": "l63-rbf-rk4-quadratic-n4096",
+      "problem": "l63",
+      "scientific": {
+        "backend": "cupy_cuda",
+        "reference_backend": "numpy_cpu",
+        "training_size": 4096,
+        "kernel": "rbf",
+        "stage_reconstruction": "rk4_quadratic",
+        "dt": 0.01,
+        "sigma": 10.0,
+        "rho": 28.0,
+        "beta": 2.6666666666666665,
+        "reference_seeds": [
+          22,
+          43
+        ],
+        "input": "raw_xyz",
+        "target": "next_z_increment",
+        "models": 10,
+        "training_starts": [
+          0,
+          20000,
+          40000,
+          60000,
+          80000,
+          100000,
+          120000,
+          140000,
+          160000,
+          180000
+        ],
+        "validation_length": 3000,
+        "validation_offsets": [
+          353,
+          314,
+          81
+        ],
+        "validation_horizon": 1500,
+        "test_trials": 500,
+        "test_horizon": 2500,
+        "error_threshold": 0.09,
+        "lyapunov_exponent": 0.91,
+        "summary_ddof": 1,
+        "precision": "float64",
+        "solver": "cholesky",
+        "candidate_count": 4096,
+        "candidates": "external_literal_schedule_per_model",
+        "input_scaling": "identity",
+        "candidate_chunk": 1,
+        "data_identity": "frozen_l63_protocol_bundle",
+        "selection": "maximum_validation_vpt_first_index_tie",
+        "protocol_bundle_sha256": "7c5ed13c95c57cd17d38277c41fc5cad98c2a48ae904d6053413a5f84f452f9f"
+      },
+      "publication_mapping": [
+        "Table 1"
+      ],
+      "backend": "cupy_cuda",
+      "supported_workflows": [
+        "reproduce",
+        "replay",
+        "render"
+      ],
+      "readiness": "requires_external_inputs_and_cuda",
+      "implementation_verification": "local_cpu_unit_tests_only",
+      "historical_identity_status": "not_certified_byte_identical"
+    },
+    {
+      "id": "l63-rbf-rk4-cubic-n4096",
+      "problem": "l63",
+      "scientific": {
+        "backend": "cupy_cuda",
+        "reference_backend": "numpy_cpu",
+        "training_size": 4096,
+        "kernel": "rbf",
+        "stage_reconstruction": "rk4_cubic",
+        "dt": 0.01,
+        "sigma": 10.0,
+        "rho": 28.0,
+        "beta": 2.6666666666666665,
+        "reference_seeds": [
+          22,
+          43
+        ],
+        "input": "raw_xyz",
+        "target": "next_z_increment",
+        "models": 10,
+        "training_starts": [
+          0,
+          20000,
+          40000,
+          60000,
+          80000,
+          100000,
+          120000,
+          140000,
+          160000,
+          180000
+        ],
+        "validation_length": 3000,
+        "validation_offsets": [
+          353,
+          314,
+          81
+        ],
+        "validation_horizon": 1500,
+        "test_trials": 500,
+        "test_horizon": 2500,
+        "error_threshold": 0.09,
+        "lyapunov_exponent": 0.91,
+        "summary_ddof": 1,
+        "precision": "float64",
+        "solver": "cholesky",
+        "candidate_count": 4096,
+        "candidates": "external_literal_schedule_per_model",
+        "input_scaling": "identity",
+        "candidate_chunk": 1,
+        "data_identity": "frozen_l63_protocol_bundle",
+        "selection": "maximum_validation_vpt_first_index_tie",
+        "protocol_bundle_sha256": "7c5ed13c95c57cd17d38277c41fc5cad98c2a48ae904d6053413a5f84f452f9f"
+      },
+      "publication_mapping": [
+        "Table 2",
+        "Table 1"
+      ],
+      "backend": "cupy_cuda",
+      "supported_workflows": [
+        "reproduce",
+        "replay",
+        "render"
+      ],
+      "readiness": "requires_external_inputs_and_cuda",
+      "implementation_verification": "local_cpu_unit_tests_only",
+      "historical_identity_status": "not_certified_byte_identical"
+    },
+    {
+      "id": "l63-rbf-rk4-quartic-n4096",
+      "problem": "l63",
+      "scientific": {
+        "backend": "cupy_cuda",
+        "reference_backend": "numpy_cpu",
+        "training_size": 4096,
+        "kernel": "rbf",
+        "stage_reconstruction": "rk4_quartic",
+        "dt": 0.01,
+        "sigma": 10.0,
+        "rho": 28.0,
+        "beta": 2.6666666666666665,
+        "reference_seeds": [
+          22,
+          43
+        ],
+        "input": "raw_xyz",
+        "target": "next_z_increment",
+        "models": 10,
+        "training_starts": [
+          0,
+          20000,
+          40000,
+          60000,
+          80000,
+          100000,
+          120000,
+          140000,
+          160000,
+          180000
+        ],
+        "validation_length": 3000,
+        "validation_offsets": [
+          353,
+          314,
+          81
+        ],
+        "validation_horizon": 1500,
+        "test_trials": 500,
+        "test_horizon": 2500,
+        "error_threshold": 0.09,
+        "lyapunov_exponent": 0.91,
+        "summary_ddof": 1,
+        "precision": "float64",
+        "solver": "cholesky",
+        "candidate_count": 4096,
+        "candidates": "external_literal_schedule_per_model",
+        "input_scaling": "identity",
+        "candidate_chunk": 1,
+        "data_identity": "frozen_l63_protocol_bundle",
+        "selection": "maximum_validation_vpt_first_index_tie",
+        "protocol_bundle_sha256": "7c5ed13c95c57cd17d38277c41fc5cad98c2a48ae904d6053413a5f84f452f9f"
+      },
+      "publication_mapping": [
+        "Table 1"
+      ],
+      "backend": "cupy_cuda",
+      "supported_workflows": [
+        "reproduce",
+        "replay",
+        "render"
+      ],
+      "readiness": "requires_external_inputs_and_cuda",
+      "implementation_verification": "local_cpu_unit_tests_only",
+      "historical_identity_status": "not_certified_byte_identical"
+    },
+    {
+      "id": "l63-rbf-rk4-quintic-n4096",
+      "problem": "l63",
+      "scientific": {
+        "backend": "cupy_cuda",
+        "reference_backend": "numpy_cpu",
+        "training_size": 4096,
+        "kernel": "rbf",
+        "stage_reconstruction": "rk4_quintic",
+        "dt": 0.01,
+        "sigma": 10.0,
+        "rho": 28.0,
+        "beta": 2.6666666666666665,
+        "reference_seeds": [
+          22,
+          43
+        ],
+        "input": "raw_xyz",
+        "target": "next_z_increment",
+        "models": 10,
+        "training_starts": [
+          0,
+          20000,
+          40000,
+          60000,
+          80000,
+          100000,
+          120000,
+          140000,
+          160000,
+          180000
+        ],
+        "validation_length": 3000,
+        "validation_offsets": [
+          353,
+          314,
+          81
+        ],
+        "validation_horizon": 1500,
+        "test_trials": 500,
+        "test_horizon": 2500,
+        "error_threshold": 0.09,
+        "lyapunov_exponent": 0.91,
+        "summary_ddof": 1,
+        "precision": "float64",
+        "solver": "cholesky",
+        "candidate_count": 4096,
+        "candidates": "external_literal_schedule_per_model",
+        "input_scaling": "identity",
+        "candidate_chunk": 1,
+        "data_identity": "frozen_l63_protocol_bundle",
+        "selection": "maximum_validation_vpt_first_index_tie",
+        "protocol_bundle_sha256": "7c5ed13c95c57cd17d38277c41fc5cad98c2a48ae904d6053413a5f84f452f9f"
+      },
+      "publication_mapping": [
+        "Table 1"
+      ],
+      "backend": "cupy_cuda",
+      "supported_workflows": [
+        "reproduce",
+        "replay",
+        "render"
+      ],
+      "readiness": "requires_external_inputs_and_cuda",
+      "implementation_verification": "local_cpu_unit_tests_only",
+      "historical_identity_status": "not_certified_byte_identical"
+    },
+    {
+      "id": "l63-diffusion-maps-heun-n4096",
+      "problem": "l63",
+      "scientific": {
+        "backend": "cupy_cuda",
+        "reference_backend": "numpy_cpu",
+        "training_size": 4096,
+        "kernel": "diffusion_maps",
+        "stage_reconstruction": "heun",
+        "dt": 0.01,
+        "sigma": 10.0,
+        "rho": 28.0,
+        "beta": 2.6666666666666665,
+        "reference_seeds": [
+          22,
+          43
+        ],
+        "input": "raw_xyz",
+        "target": "next_z_increment",
+        "models": 10,
+        "training_starts": [
+          0,
+          20000,
+          40000,
+          60000,
+          80000,
+          100000,
+          120000,
+          140000,
+          160000,
+          180000
+        ],
+        "validation_length": 3000,
+        "validation_offsets": [
+          353,
+          314,
+          81
+        ],
+        "validation_horizon": 1500,
+        "test_trials": 500,
+        "test_horizon": 2500,
+        "error_threshold": 0.09,
+        "lyapunov_exponent": 0.91,
+        "summary_ddof": 1,
+        "precision": "float64",
+        "solver": "cholesky",
+        "candidate_count": 4096,
+        "candidates": "external_literal_schedule_per_model",
+        "input_scaling": "identity",
+        "candidate_chunk": 1,
+        "data_identity": "frozen_l63_protocol_bundle",
+        "selection": "maximum_validation_vpt_first_index_tie",
+        "protocol_bundle_sha256": "7c5ed13c95c57cd17d38277c41fc5cad98c2a48ae904d6053413a5f84f452f9f"
+      },
+      "publication_mapping": [
+        "Table 1"
+      ],
+      "backend": "cupy_cuda",
+      "supported_workflows": [
+        "reproduce",
+        "replay",
+        "render"
+      ],
+      "readiness": "requires_external_inputs_and_cuda",
+      "implementation_verification": "local_cpu_unit_tests_only",
+      "historical_identity_status": "not_certified_byte_identical"
+    },
+    {
+      "id": "l63-diffusion-maps-rk4-quadratic-n4096",
+      "problem": "l63",
+      "scientific": {
+        "backend": "cupy_cuda",
+        "reference_backend": "numpy_cpu",
+        "training_size": 4096,
+        "kernel": "diffusion_maps",
+        "stage_reconstruction": "rk4_quadratic",
+        "dt": 0.01,
+        "sigma": 10.0,
+        "rho": 28.0,
+        "beta": 2.6666666666666665,
+        "reference_seeds": [
+          22,
+          43
+        ],
+        "input": "raw_xyz",
+        "target": "next_z_increment",
+        "models": 10,
+        "training_starts": [
+          0,
+          20000,
+          40000,
+          60000,
+          80000,
+          100000,
+          120000,
+          140000,
+          160000,
+          180000
+        ],
+        "validation_length": 3000,
+        "validation_offsets": [
+          353,
+          314,
+          81
+        ],
+        "validation_horizon": 1500,
+        "test_trials": 500,
+        "test_horizon": 2500,
+        "error_threshold": 0.09,
+        "lyapunov_exponent": 0.91,
+        "summary_ddof": 1,
+        "precision": "float64",
+        "solver": "cholesky",
+        "candidate_count": 4096,
+        "candidates": "external_literal_schedule_per_model",
+        "input_scaling": "identity",
+        "candidate_chunk": 1,
+        "data_identity": "frozen_l63_protocol_bundle",
+        "selection": "maximum_validation_vpt_first_index_tie",
+        "protocol_bundle_sha256": "7c5ed13c95c57cd17d38277c41fc5cad98c2a48ae904d6053413a5f84f452f9f"
+      },
+      "publication_mapping": [
+        "Table 1"
+      ],
+      "backend": "cupy_cuda",
+      "supported_workflows": [
+        "reproduce",
+        "replay",
+        "render"
+      ],
+      "readiness": "requires_external_inputs_and_cuda",
+      "implementation_verification": "local_cpu_unit_tests_only",
+      "historical_identity_status": "not_certified_byte_identical"
+    },
+    {
+      "id": "l63-diffusion-maps-rk4-cubic-n4096",
+      "problem": "l63",
+      "scientific": {
+        "backend": "cupy_cuda",
+        "reference_backend": "numpy_cpu",
+        "training_size": 4096,
+        "kernel": "diffusion_maps",
+        "stage_reconstruction": "rk4_cubic",
+        "dt": 0.01,
+        "sigma": 10.0,
+        "rho": 28.0,
+        "beta": 2.6666666666666665,
+        "reference_seeds": [
+          22,
+          43
+        ],
+        "input": "raw_xyz",
+        "target": "next_z_increment",
+        "models": 10,
+        "training_starts": [
+          0,
+          20000,
+          40000,
+          60000,
+          80000,
+          100000,
+          120000,
+          140000,
+          160000,
+          180000
+        ],
+        "validation_length": 3000,
+        "validation_offsets": [
+          353,
+          314,
+          81
+        ],
+        "validation_horizon": 1500,
+        "test_trials": 500,
+        "test_horizon": 2500,
+        "error_threshold": 0.09,
+        "lyapunov_exponent": 0.91,
+        "summary_ddof": 1,
+        "precision": "float64",
+        "solver": "cholesky",
+        "candidate_count": 4096,
+        "candidates": "external_literal_schedule_per_model",
+        "input_scaling": "identity",
+        "candidate_chunk": 1,
+        "data_identity": "frozen_l63_protocol_bundle",
+        "selection": "maximum_validation_vpt_first_index_tie",
+        "protocol_bundle_sha256": "7c5ed13c95c57cd17d38277c41fc5cad98c2a48ae904d6053413a5f84f452f9f"
+      },
+      "publication_mapping": [
+        "Table 2",
+        "Table 1"
+      ],
+      "backend": "cupy_cuda",
+      "supported_workflows": [
+        "reproduce",
+        "replay",
+        "render"
+      ],
+      "readiness": "requires_external_inputs_and_cuda",
+      "implementation_verification": "local_cpu_unit_tests_only",
+      "historical_identity_status": "not_certified_byte_identical"
+    },
+    {
+      "id": "l63-diffusion-maps-rk4-quartic-n4096",
+      "problem": "l63",
+      "scientific": {
+        "backend": "cupy_cuda",
+        "reference_backend": "numpy_cpu",
+        "training_size": 4096,
+        "kernel": "diffusion_maps",
+        "stage_reconstruction": "rk4_quartic",
+        "dt": 0.01,
+        "sigma": 10.0,
+        "rho": 28.0,
+        "beta": 2.6666666666666665,
+        "reference_seeds": [
+          22,
+          43
+        ],
+        "input": "raw_xyz",
+        "target": "next_z_increment",
+        "models": 10,
+        "training_starts": [
+          0,
+          20000,
+          40000,
+          60000,
+          80000,
+          100000,
+          120000,
+          140000,
+          160000,
+          180000
+        ],
+        "validation_length": 3000,
+        "validation_offsets": [
+          353,
+          314,
+          81
+        ],
+        "validation_horizon": 1500,
+        "test_trials": 500,
+        "test_horizon": 2500,
+        "error_threshold": 0.09,
+        "lyapunov_exponent": 0.91,
+        "summary_ddof": 1,
+        "precision": "float64",
+        "solver": "cholesky",
+        "candidate_count": 4096,
+        "candidates": "external_literal_schedule_per_model",
+        "input_scaling": "identity",
+        "candidate_chunk": 1,
+        "data_identity": "frozen_l63_protocol_bundle",
+        "selection": "maximum_validation_vpt_first_index_tie",
+        "protocol_bundle_sha256": "7c5ed13c95c57cd17d38277c41fc5cad98c2a48ae904d6053413a5f84f452f9f"
+      },
+      "publication_mapping": [
+        "Table 1"
+      ],
+      "backend": "cupy_cuda",
+      "supported_workflows": [
+        "reproduce",
+        "replay",
+        "render"
+      ],
+      "readiness": "requires_external_inputs_and_cuda",
+      "implementation_verification": "local_cpu_unit_tests_only",
+      "historical_identity_status": "not_certified_byte_identical"
+    },
+    {
+      "id": "l63-diffusion-maps-rk4-quintic-n4096",
+      "problem": "l63",
+      "scientific": {
+        "backend": "cupy_cuda",
+        "reference_backend": "numpy_cpu",
+        "training_size": 4096,
+        "kernel": "diffusion_maps",
+        "stage_reconstruction": "rk4_quintic",
+        "dt": 0.01,
+        "sigma": 10.0,
+        "rho": 28.0,
+        "beta": 2.6666666666666665,
+        "reference_seeds": [
+          22,
+          43
+        ],
+        "input": "raw_xyz",
+        "target": "next_z_increment",
+        "models": 10,
+        "training_starts": [
+          0,
+          20000,
+          40000,
+          60000,
+          80000,
+          100000,
+          120000,
+          140000,
+          160000,
+          180000
+        ],
+        "validation_length": 3000,
+        "validation_offsets": [
+          353,
+          314,
+          81
+        ],
+        "validation_horizon": 1500,
+        "test_trials": 500,
+        "test_horizon": 2500,
+        "error_threshold": 0.09,
+        "lyapunov_exponent": 0.91,
+        "summary_ddof": 1,
+        "precision": "float64",
+        "solver": "cholesky",
+        "candidate_count": 4096,
+        "candidates": "external_literal_schedule_per_model",
+        "input_scaling": "identity",
+        "candidate_chunk": 1,
+        "data_identity": "frozen_l63_protocol_bundle",
+        "selection": "maximum_validation_vpt_first_index_tie",
+        "protocol_bundle_sha256": "7c5ed13c95c57cd17d38277c41fc5cad98c2a48ae904d6053413a5f84f452f9f"
+      },
+      "publication_mapping": [
+        "Table 1"
+      ],
+      "backend": "cupy_cuda",
+      "supported_workflows": [
+        "reproduce",
+        "replay",
+        "render"
+      ],
+      "readiness": "requires_external_inputs_and_cuda",
+      "implementation_verification": "local_cpu_unit_tests_only",
+      "historical_identity_status": "not_certified_byte_identical"
+    },
+    {
+      "id": "ks-rbf-m0-n2048",
+      "problem": "ks",
+      "scientific": {
+        "backend": "cupy_cuda",
+        "reference_backend": "numpy_scipy_cpu",
+        "training_size": 2048,
+        "kernel": "rbf",
+        "memory_order": 0,
+        "reference_truncation": "1 <= |k| <= 48",
+        "alpha": 0.085,
+        "dt": 0.05,
+        "substeps": 10,
+        "contour_points": 32,
+        "closure_interpolation": 1,
+        "models": 10,
+        "split_index": 400000,
+        "training_starts": [
+          0,
+          25000,
+          50000,
+          75000,
+          100000,
+          125000,
+          150000,
+          175000,
+          200000,
+          225000
+        ],
+        "validation_length": 4000,
+        "validation_offsets": [
+          100,
+          575,
+          1050,
+          1525,
+          2000
+        ],
+        "validation_horizon": 2000,
+        "test_trials": 50,
+        "test_horizon": 2000,
+        "error_threshold": 0.25,
+        "lyapunov_exponent": 0.04,
+        "summary_ddof": 0,
+        "precision": "float64",
+        "solver": "eig_grouped",
+        "selected_solver": "eig",
+        "epsilon_log10_bounds": [
+          -3,
+          3
+        ],
+        "lambda_log10_bounds": [
+          -16,
+          0
+        ],
+        "epsilon_count": 13,
+        "lambda_count": 13,
+        "candidate_chunk": 13,
+        "input": "raw_v_thetaHat_history",
+        "target": "next_thetaHat",
+        "input_scaling": "identity",
+        "target_scaling": "identity",
+        "pca": false,
+        "data_identity": "aligned_ks_processed",
+        "selection": "maximum_validation_vpt_first_index_tie",
+        "raw_reference_sha256": "80d6bd17fe8717fff5c392ed02581ec09e4590ae4b461d811ec864d257463d84"
+      },
+      "publication_mapping": [
+        "Table 5",
+        "Figure 3"
+      ],
+      "backend": "cupy_cuda",
+      "supported_workflows": [
+        "reproduce",
+        "replay",
+        "render"
+      ],
+      "readiness": "requires_external_inputs_and_cuda",
+      "implementation_verification": "local_cpu_unit_tests_only",
+      "historical_identity_status": "not_certified_byte_identical"
+    },
+    {
+      "id": "ks-rbf-m1-n2048",
+      "problem": "ks",
+      "scientific": {
+        "backend": "cupy_cuda",
+        "reference_backend": "numpy_scipy_cpu",
+        "training_size": 2048,
+        "kernel": "rbf",
+        "memory_order": 1,
+        "reference_truncation": "1 <= |k| <= 48",
+        "alpha": 0.085,
+        "dt": 0.05,
+        "substeps": 10,
+        "contour_points": 32,
+        "closure_interpolation": 1,
+        "models": 10,
+        "split_index": 400000,
+        "training_starts": [
+          0,
+          25000,
+          50000,
+          75000,
+          100000,
+          125000,
+          150000,
+          175000,
+          200000,
+          225000
+        ],
+        "validation_length": 4000,
+        "validation_offsets": [
+          100,
+          575,
+          1050,
+          1525,
+          2000
+        ],
+        "validation_horizon": 2000,
+        "test_trials": 50,
+        "test_horizon": 2000,
+        "error_threshold": 0.25,
+        "lyapunov_exponent": 0.04,
+        "summary_ddof": 0,
+        "precision": "float64",
+        "solver": "eig_grouped",
+        "selected_solver": "eig",
+        "epsilon_log10_bounds": [
+          -3,
+          3
+        ],
+        "lambda_log10_bounds": [
+          -16,
+          0
+        ],
+        "epsilon_count": 13,
+        "lambda_count": 13,
+        "candidate_chunk": 13,
+        "input": "raw_v_thetaHat_history",
+        "target": "next_thetaHat",
+        "input_scaling": "identity",
+        "target_scaling": "identity",
+        "pca": false,
+        "data_identity": "aligned_ks_processed",
+        "selection": "maximum_validation_vpt_first_index_tie",
+        "raw_reference_sha256": "80d6bd17fe8717fff5c392ed02581ec09e4590ae4b461d811ec864d257463d84"
+      },
+      "publication_mapping": [
+        "Table 5"
+      ],
+      "backend": "cupy_cuda",
+      "supported_workflows": [
+        "reproduce",
+        "replay",
+        "render"
+      ],
+      "readiness": "requires_external_inputs_and_cuda",
+      "implementation_verification": "local_cpu_unit_tests_only",
+      "historical_identity_status": "not_certified_byte_identical"
+    },
+    {
+      "id": "ks-diffusion-maps-m0-n2048",
+      "problem": "ks",
+      "scientific": {
+        "backend": "cupy_cuda",
+        "reference_backend": "numpy_scipy_cpu",
+        "training_size": 2048,
+        "kernel": "diffusion_maps",
+        "memory_order": 0,
+        "reference_truncation": "1 <= |k| <= 48",
+        "alpha": 0.085,
+        "dt": 0.05,
+        "substeps": 10,
+        "contour_points": 32,
+        "closure_interpolation": 1,
+        "models": 10,
+        "split_index": 400000,
+        "training_starts": [
+          0,
+          25000,
+          50000,
+          75000,
+          100000,
+          125000,
+          150000,
+          175000,
+          200000,
+          225000
+        ],
+        "validation_length": 4000,
+        "validation_offsets": [
+          100,
+          575,
+          1050,
+          1525,
+          2000
+        ],
+        "validation_horizon": 2000,
+        "test_trials": 50,
+        "test_horizon": 2000,
+        "error_threshold": 0.25,
+        "lyapunov_exponent": 0.04,
+        "summary_ddof": 0,
+        "precision": "float64",
+        "solver": "eig_grouped",
+        "selected_solver": "eig",
+        "epsilon_log10_bounds": [
+          -3,
+          3
+        ],
+        "lambda_log10_bounds": [
+          -16,
+          0
+        ],
+        "epsilon_count": 13,
+        "lambda_count": 13,
+        "candidate_chunk": 13,
+        "input": "raw_v_thetaHat_history",
+        "target": "next_thetaHat",
+        "input_scaling": "identity",
+        "target_scaling": "identity",
+        "pca": false,
+        "data_identity": "aligned_ks_processed",
+        "selection": "maximum_validation_vpt_first_index_tie",
+        "raw_reference_sha256": "80d6bd17fe8717fff5c392ed02581ec09e4590ae4b461d811ec864d257463d84"
+      },
+      "publication_mapping": [
+        "Table 5",
+        "Figure 3"
+      ],
+      "backend": "cupy_cuda",
+      "supported_workflows": [
+        "reproduce",
+        "replay",
+        "render"
+      ],
+      "readiness": "requires_external_inputs_and_cuda",
+      "implementation_verification": "local_cpu_unit_tests_only",
+      "historical_identity_status": "not_certified_byte_identical"
+    },
+    {
+      "id": "ks-diffusion-maps-m1-n2048",
+      "problem": "ks",
+      "scientific": {
+        "backend": "cupy_cuda",
+        "reference_backend": "numpy_scipy_cpu",
+        "training_size": 2048,
+        "kernel": "diffusion_maps",
+        "memory_order": 1,
+        "reference_truncation": "1 <= |k| <= 48",
+        "alpha": 0.085,
+        "dt": 0.05,
+        "substeps": 10,
+        "contour_points": 32,
+        "closure_interpolation": 1,
+        "models": 10,
+        "split_index": 400000,
+        "training_starts": [
+          0,
+          25000,
+          50000,
+          75000,
+          100000,
+          125000,
+          150000,
+          175000,
+          200000,
+          225000
+        ],
+        "validation_length": 4000,
+        "validation_offsets": [
+          100,
+          575,
+          1050,
+          1525,
+          2000
+        ],
+        "validation_horizon": 2000,
+        "test_trials": 50,
+        "test_horizon": 2000,
+        "error_threshold": 0.25,
+        "lyapunov_exponent": 0.04,
+        "summary_ddof": 0,
+        "precision": "float64",
+        "solver": "eig_grouped",
+        "selected_solver": "eig",
+        "epsilon_log10_bounds": [
+          -3,
+          3
+        ],
+        "lambda_log10_bounds": [
+          -16,
+          0
+        ],
+        "epsilon_count": 13,
+        "lambda_count": 13,
+        "candidate_chunk": 13,
+        "input": "raw_v_thetaHat_history",
+        "target": "next_thetaHat",
+        "input_scaling": "identity",
+        "target_scaling": "identity",
+        "pca": false,
+        "data_identity": "aligned_ks_processed",
+        "selection": "maximum_validation_vpt_first_index_tie",
+        "raw_reference_sha256": "80d6bd17fe8717fff5c392ed02581ec09e4590ae4b461d811ec864d257463d84"
+      },
+      "publication_mapping": [
+        "Table 5"
+      ],
+      "backend": "cupy_cuda",
+      "supported_workflows": [
+        "reproduce",
+        "replay",
+        "render"
+      ],
+      "readiness": "requires_external_inputs_and_cuda",
+      "implementation_verification": "local_cpu_unit_tests_only",
+      "historical_identity_status": "not_certified_byte_identical"
+    },
+    {
+      "id": "ks-rbf-m0-n4096",
+      "problem": "ks",
+      "scientific": {
+        "backend": "cupy_cuda",
+        "reference_backend": "numpy_scipy_cpu",
+        "training_size": 4096,
+        "kernel": "rbf",
+        "memory_order": 0,
+        "reference_truncation": "1 <= |k| <= 48",
+        "alpha": 0.085,
+        "dt": 0.05,
+        "substeps": 10,
+        "contour_points": 32,
+        "closure_interpolation": 1,
+        "models": 10,
+        "split_index": 400000,
+        "training_starts": [
+          0,
+          25000,
+          50000,
+          75000,
+          100000,
+          125000,
+          150000,
+          175000,
+          200000,
+          225000
+        ],
+        "validation_length": 4000,
+        "validation_offsets": [
+          100,
+          575,
+          1050,
+          1525,
+          2000
+        ],
+        "validation_horizon": 2000,
+        "test_trials": 50,
+        "test_horizon": 2000,
+        "error_threshold": 0.25,
+        "lyapunov_exponent": 0.04,
+        "summary_ddof": 0,
+        "precision": "float64",
+        "solver": "eig_grouped",
+        "selected_solver": "eig",
+        "epsilon_log10_bounds": [
+          -3,
+          3
+        ],
+        "lambda_log10_bounds": [
+          -16,
+          0
+        ],
+        "epsilon_count": 13,
+        "lambda_count": 13,
+        "candidate_chunk": 13,
+        "input": "raw_v_thetaHat_history",
+        "target": "next_thetaHat",
+        "input_scaling": "identity",
+        "target_scaling": "identity",
+        "pca": false,
+        "data_identity": "aligned_ks_processed",
+        "selection": "maximum_validation_vpt_first_index_tie",
+        "raw_reference_sha256": "80d6bd17fe8717fff5c392ed02581ec09e4590ae4b461d811ec864d257463d84"
+      },
+      "publication_mapping": [
+        "Table 5",
+        "Figure 3"
+      ],
+      "backend": "cupy_cuda",
+      "supported_workflows": [
+        "reproduce",
+        "replay",
+        "render"
+      ],
+      "readiness": "requires_external_inputs_and_cuda",
+      "implementation_verification": "local_cpu_unit_tests_only",
+      "historical_identity_status": "not_certified_byte_identical"
+    },
+    {
+      "id": "ks-rbf-m1-n4096",
+      "problem": "ks",
+      "scientific": {
+        "backend": "cupy_cuda",
+        "reference_backend": "numpy_scipy_cpu",
+        "training_size": 4096,
+        "kernel": "rbf",
+        "memory_order": 1,
+        "reference_truncation": "1 <= |k| <= 48",
+        "alpha": 0.085,
+        "dt": 0.05,
+        "substeps": 10,
+        "contour_points": 32,
+        "closure_interpolation": 1,
+        "models": 10,
+        "split_index": 400000,
+        "training_starts": [
+          0,
+          25000,
+          50000,
+          75000,
+          100000,
+          125000,
+          150000,
+          175000,
+          200000,
+          225000
+        ],
+        "validation_length": 4000,
+        "validation_offsets": [
+          100,
+          575,
+          1050,
+          1525,
+          2000
+        ],
+        "validation_horizon": 2000,
+        "test_trials": 50,
+        "test_horizon": 2000,
+        "error_threshold": 0.25,
+        "lyapunov_exponent": 0.04,
+        "summary_ddof": 0,
+        "precision": "float64",
+        "solver": "eig_grouped",
+        "selected_solver": "eig",
+        "epsilon_log10_bounds": [
+          -3,
+          3
+        ],
+        "lambda_log10_bounds": [
+          -16,
+          0
+        ],
+        "epsilon_count": 13,
+        "lambda_count": 13,
+        "candidate_chunk": 13,
+        "input": "raw_v_thetaHat_history",
+        "target": "next_thetaHat",
+        "input_scaling": "identity",
+        "target_scaling": "identity",
+        "pca": false,
+        "data_identity": "aligned_ks_processed",
+        "selection": "maximum_validation_vpt_first_index_tie",
+        "raw_reference_sha256": "80d6bd17fe8717fff5c392ed02581ec09e4590ae4b461d811ec864d257463d84"
+      },
+      "publication_mapping": [
+        "Table 5"
+      ],
+      "backend": "cupy_cuda",
+      "supported_workflows": [
+        "reproduce",
+        "replay",
+        "render"
+      ],
+      "readiness": "requires_external_inputs_and_cuda",
+      "implementation_verification": "local_cpu_unit_tests_only",
+      "historical_identity_status": "not_certified_byte_identical"
+    },
+    {
+      "id": "ks-diffusion-maps-m0-n4096",
+      "problem": "ks",
+      "scientific": {
+        "backend": "cupy_cuda",
+        "reference_backend": "numpy_scipy_cpu",
+        "training_size": 4096,
+        "kernel": "diffusion_maps",
+        "memory_order": 0,
+        "reference_truncation": "1 <= |k| <= 48",
+        "alpha": 0.085,
+        "dt": 0.05,
+        "substeps": 10,
+        "contour_points": 32,
+        "closure_interpolation": 1,
+        "models": 10,
+        "split_index": 400000,
+        "training_starts": [
+          0,
+          25000,
+          50000,
+          75000,
+          100000,
+          125000,
+          150000,
+          175000,
+          200000,
+          225000
+        ],
+        "validation_length": 4000,
+        "validation_offsets": [
+          100,
+          575,
+          1050,
+          1525,
+          2000
+        ],
+        "validation_horizon": 2000,
+        "test_trials": 50,
+        "test_horizon": 2000,
+        "error_threshold": 0.25,
+        "lyapunov_exponent": 0.04,
+        "summary_ddof": 0,
+        "precision": "float64",
+        "solver": "eig_grouped",
+        "selected_solver": "eig",
+        "epsilon_log10_bounds": [
+          -3,
+          3
+        ],
+        "lambda_log10_bounds": [
+          -16,
+          0
+        ],
+        "epsilon_count": 13,
+        "lambda_count": 13,
+        "candidate_chunk": 13,
+        "input": "raw_v_thetaHat_history",
+        "target": "next_thetaHat",
+        "input_scaling": "identity",
+        "target_scaling": "identity",
+        "pca": false,
+        "data_identity": "aligned_ks_processed",
+        "selection": "maximum_validation_vpt_first_index_tie",
+        "raw_reference_sha256": "80d6bd17fe8717fff5c392ed02581ec09e4590ae4b461d811ec864d257463d84"
+      },
+      "publication_mapping": [
+        "Table 5",
+        "Figure 3"
+      ],
+      "backend": "cupy_cuda",
+      "supported_workflows": [
+        "reproduce",
+        "replay",
+        "render"
+      ],
+      "readiness": "requires_external_inputs_and_cuda",
+      "implementation_verification": "local_cpu_unit_tests_only",
+      "historical_identity_status": "not_certified_byte_identical"
+    },
+    {
+      "id": "ks-diffusion-maps-m1-n4096",
+      "problem": "ks",
+      "scientific": {
+        "backend": "cupy_cuda",
+        "reference_backend": "numpy_scipy_cpu",
+        "training_size": 4096,
+        "kernel": "diffusion_maps",
+        "memory_order": 1,
+        "reference_truncation": "1 <= |k| <= 48",
+        "alpha": 0.085,
+        "dt": 0.05,
+        "substeps": 10,
+        "contour_points": 32,
+        "closure_interpolation": 1,
+        "models": 10,
+        "split_index": 400000,
+        "training_starts": [
+          0,
+          25000,
+          50000,
+          75000,
+          100000,
+          125000,
+          150000,
+          175000,
+          200000,
+          225000
+        ],
+        "validation_length": 4000,
+        "validation_offsets": [
+          100,
+          575,
+          1050,
+          1525,
+          2000
+        ],
+        "validation_horizon": 2000,
+        "test_trials": 50,
+        "test_horizon": 2000,
+        "error_threshold": 0.25,
+        "lyapunov_exponent": 0.04,
+        "summary_ddof": 0,
+        "precision": "float64",
+        "solver": "eig_grouped",
+        "selected_solver": "eig",
+        "epsilon_log10_bounds": [
+          -3,
+          3
+        ],
+        "lambda_log10_bounds": [
+          -16,
+          0
+        ],
+        "epsilon_count": 13,
+        "lambda_count": 13,
+        "candidate_chunk": 13,
+        "input": "raw_v_thetaHat_history",
+        "target": "next_thetaHat",
+        "input_scaling": "identity",
+        "target_scaling": "identity",
+        "pca": false,
+        "data_identity": "aligned_ks_processed",
+        "selection": "maximum_validation_vpt_first_index_tie",
+        "raw_reference_sha256": "80d6bd17fe8717fff5c392ed02581ec09e4590ae4b461d811ec864d257463d84"
+      },
+      "publication_mapping": [
+        "Table 5"
+      ],
+      "backend": "cupy_cuda",
+      "supported_workflows": [
+        "reproduce",
+        "replay",
+        "render"
+      ],
+      "readiness": "requires_external_inputs_and_cuda",
+      "implementation_verification": "local_cpu_unit_tests_only",
+      "historical_identity_status": "not_certified_byte_identical"
+    },
+    {
+      "id": "ks-rbf-m0-n8192",
+      "problem": "ks",
+      "scientific": {
+        "backend": "cupy_cuda",
+        "reference_backend": "numpy_scipy_cpu",
+        "training_size": 8192,
+        "kernel": "rbf",
+        "memory_order": 0,
+        "reference_truncation": "1 <= |k| <= 48",
+        "alpha": 0.085,
+        "dt": 0.05,
+        "substeps": 10,
+        "contour_points": 32,
+        "closure_interpolation": 1,
+        "models": 10,
+        "split_index": 400000,
+        "training_starts": [
+          0,
+          25000,
+          50000,
+          75000,
+          100000,
+          125000,
+          150000,
+          175000,
+          200000,
+          225000
+        ],
+        "validation_length": 4000,
+        "validation_offsets": [
+          100,
+          575,
+          1050,
+          1525,
+          2000
+        ],
+        "validation_horizon": 2000,
+        "test_trials": 50,
+        "test_horizon": 2000,
+        "error_threshold": 0.25,
+        "lyapunov_exponent": 0.04,
+        "summary_ddof": 0,
+        "precision": "float64",
+        "solver": "eig_grouped",
+        "selected_solver": "eig",
+        "epsilon_log10_bounds": [
+          -3,
+          3
+        ],
+        "lambda_log10_bounds": [
+          -16,
+          0
+        ],
+        "epsilon_count": 13,
+        "lambda_count": 13,
+        "candidate_chunk": 13,
+        "input": "raw_v_thetaHat_history",
+        "target": "next_thetaHat",
+        "input_scaling": "identity",
+        "target_scaling": "identity",
+        "pca": false,
+        "data_identity": "aligned_ks_processed",
+        "selection": "maximum_validation_vpt_first_index_tie",
+        "raw_reference_sha256": "80d6bd17fe8717fff5c392ed02581ec09e4590ae4b461d811ec864d257463d84"
+      },
+      "publication_mapping": [
+        "Table 5",
+        "Figure 3"
+      ],
+      "backend": "cupy_cuda",
+      "supported_workflows": [
+        "reproduce",
+        "replay",
+        "render"
+      ],
+      "readiness": "requires_external_inputs_and_cuda",
+      "implementation_verification": "local_cpu_unit_tests_only",
+      "historical_identity_status": "not_certified_byte_identical"
+    },
+    {
+      "id": "ks-rbf-m1-n8192",
+      "problem": "ks",
+      "scientific": {
+        "backend": "cupy_cuda",
+        "reference_backend": "numpy_scipy_cpu",
+        "training_size": 8192,
+        "kernel": "rbf",
+        "memory_order": 1,
+        "reference_truncation": "1 <= |k| <= 48",
+        "alpha": 0.085,
+        "dt": 0.05,
+        "substeps": 10,
+        "contour_points": 32,
+        "closure_interpolation": 1,
+        "models": 10,
+        "split_index": 400000,
+        "training_starts": [
+          0,
+          25000,
+          50000,
+          75000,
+          100000,
+          125000,
+          150000,
+          175000,
+          200000,
+          225000
+        ],
+        "validation_length": 4000,
+        "validation_offsets": [
+          100,
+          575,
+          1050,
+          1525,
+          2000
+        ],
+        "validation_horizon": 2000,
+        "test_trials": 50,
+        "test_horizon": 2000,
+        "error_threshold": 0.25,
+        "lyapunov_exponent": 0.04,
+        "summary_ddof": 0,
+        "precision": "float64",
+        "solver": "eig_grouped",
+        "selected_solver": "eig",
+        "epsilon_log10_bounds": [
+          -3,
+          3
+        ],
+        "lambda_log10_bounds": [
+          -16,
+          0
+        ],
+        "epsilon_count": 13,
+        "lambda_count": 13,
+        "candidate_chunk": 13,
+        "input": "raw_v_thetaHat_history",
+        "target": "next_thetaHat",
+        "input_scaling": "identity",
+        "target_scaling": "identity",
+        "pca": false,
+        "data_identity": "aligned_ks_processed",
+        "selection": "maximum_validation_vpt_first_index_tie",
+        "raw_reference_sha256": "80d6bd17fe8717fff5c392ed02581ec09e4590ae4b461d811ec864d257463d84"
+      },
+      "publication_mapping": [
+        "Table 5"
+      ],
+      "backend": "cupy_cuda",
+      "supported_workflows": [
+        "reproduce",
+        "replay",
+        "render"
+      ],
+      "readiness": "requires_external_inputs_and_cuda",
+      "implementation_verification": "local_cpu_unit_tests_only",
+      "historical_identity_status": "not_certified_byte_identical"
+    },
+    {
+      "id": "ks-diffusion-maps-m0-n8192",
+      "problem": "ks",
+      "scientific": {
+        "backend": "cupy_cuda",
+        "reference_backend": "numpy_scipy_cpu",
+        "training_size": 8192,
+        "kernel": "diffusion_maps",
+        "memory_order": 0,
+        "reference_truncation": "1 <= |k| <= 48",
+        "alpha": 0.085,
+        "dt": 0.05,
+        "substeps": 10,
+        "contour_points": 32,
+        "closure_interpolation": 1,
+        "models": 10,
+        "split_index": 400000,
+        "training_starts": [
+          0,
+          25000,
+          50000,
+          75000,
+          100000,
+          125000,
+          150000,
+          175000,
+          200000,
+          225000
+        ],
+        "validation_length": 4000,
+        "validation_offsets": [
+          100,
+          575,
+          1050,
+          1525,
+          2000
+        ],
+        "validation_horizon": 2000,
+        "test_trials": 50,
+        "test_horizon": 2000,
+        "error_threshold": 0.25,
+        "lyapunov_exponent": 0.04,
+        "summary_ddof": 0,
+        "precision": "float64",
+        "solver": "eig_grouped",
+        "selected_solver": "eig",
+        "epsilon_log10_bounds": [
+          -3,
+          3
+        ],
+        "lambda_log10_bounds": [
+          -16,
+          0
+        ],
+        "epsilon_count": 13,
+        "lambda_count": 13,
+        "candidate_chunk": 13,
+        "input": "raw_v_thetaHat_history",
+        "target": "next_thetaHat",
+        "input_scaling": "identity",
+        "target_scaling": "identity",
+        "pca": false,
+        "data_identity": "aligned_ks_processed",
+        "selection": "maximum_validation_vpt_first_index_tie",
+        "raw_reference_sha256": "80d6bd17fe8717fff5c392ed02581ec09e4590ae4b461d811ec864d257463d84"
+      },
+      "publication_mapping": [
+        "Table 5",
+        "Figure 3"
+      ],
+      "backend": "cupy_cuda",
+      "supported_workflows": [
+        "reproduce",
+        "replay",
+        "render"
+      ],
+      "readiness": "requires_external_inputs_and_cuda",
+      "implementation_verification": "local_cpu_unit_tests_only",
+      "historical_identity_status": "not_certified_byte_identical"
+    },
+    {
+      "id": "ks-diffusion-maps-m1-n8192",
+      "problem": "ks",
+      "scientific": {
+        "backend": "cupy_cuda",
+        "reference_backend": "numpy_scipy_cpu",
+        "training_size": 8192,
+        "kernel": "diffusion_maps",
+        "memory_order": 1,
+        "reference_truncation": "1 <= |k| <= 48",
+        "alpha": 0.085,
+        "dt": 0.05,
+        "substeps": 10,
+        "contour_points": 32,
+        "closure_interpolation": 1,
+        "models": 10,
+        "split_index": 400000,
+        "training_starts": [
+          0,
+          25000,
+          50000,
+          75000,
+          100000,
+          125000,
+          150000,
+          175000,
+          200000,
+          225000
+        ],
+        "validation_length": 4000,
+        "validation_offsets": [
+          100,
+          575,
+          1050,
+          1525,
+          2000
+        ],
+        "validation_horizon": 2000,
+        "test_trials": 50,
+        "test_horizon": 2000,
+        "error_threshold": 0.25,
+        "lyapunov_exponent": 0.04,
+        "summary_ddof": 0,
+        "precision": "float64",
+        "solver": "eig_grouped",
+        "selected_solver": "eig",
+        "epsilon_log10_bounds": [
+          -3,
+          3
+        ],
+        "lambda_log10_bounds": [
+          -16,
+          0
+        ],
+        "epsilon_count": 13,
+        "lambda_count": 13,
+        "candidate_chunk": 13,
+        "input": "raw_v_thetaHat_history",
+        "target": "next_thetaHat",
+        "input_scaling": "identity",
+        "target_scaling": "identity",
+        "pca": false,
+        "data_identity": "aligned_ks_processed",
+        "selection": "maximum_validation_vpt_first_index_tie",
+        "raw_reference_sha256": "80d6bd17fe8717fff5c392ed02581ec09e4590ae4b461d811ec864d257463d84"
+      },
+      "publication_mapping": [
+        "Table 5"
+      ],
+      "backend": "cupy_cuda",
+      "supported_workflows": [
+        "reproduce",
+        "replay",
+        "render"
+      ],
+      "readiness": "requires_external_inputs_and_cuda",
+      "implementation_verification": "local_cpu_unit_tests_only",
+      "historical_identity_status": "not_certified_byte_identical"
+    },
+    {
+      "id": "ks-rbf-m0-n16384",
+      "problem": "ks",
+      "scientific": {
+        "backend": "cupy_cuda",
+        "reference_backend": "numpy_scipy_cpu",
+        "training_size": 16384,
+        "kernel": "rbf",
+        "memory_order": 0,
+        "reference_truncation": "1 <= |k| <= 48",
+        "alpha": 0.085,
+        "dt": 0.05,
+        "substeps": 10,
+        "contour_points": 32,
+        "closure_interpolation": 1,
+        "models": 10,
+        "split_index": 400000,
+        "training_starts": [
+          0,
+          25000,
+          50000,
+          75000,
+          100000,
+          125000,
+          150000,
+          175000,
+          200000,
+          225000
+        ],
+        "validation_length": 4000,
+        "validation_offsets": [
+          100,
+          575,
+          1050,
+          1525,
+          2000
+        ],
+        "validation_horizon": 2000,
+        "test_trials": 50,
+        "test_horizon": 2000,
+        "error_threshold": 0.25,
+        "lyapunov_exponent": 0.04,
+        "summary_ddof": 0,
+        "precision": "float64",
+        "solver": "eig_grouped",
+        "selected_solver": "eig",
+        "epsilon_log10_bounds": [
+          -3,
+          3
+        ],
+        "lambda_log10_bounds": [
+          -16,
+          0
+        ],
+        "epsilon_count": 13,
+        "lambda_count": 13,
+        "candidate_chunk": 13,
+        "input": "raw_v_thetaHat_history",
+        "target": "next_thetaHat",
+        "input_scaling": "identity",
+        "target_scaling": "identity",
+        "pca": false,
+        "data_identity": "aligned_ks_processed",
+        "selection": "maximum_validation_vpt_first_index_tie",
+        "raw_reference_sha256": "80d6bd17fe8717fff5c392ed02581ec09e4590ae4b461d811ec864d257463d84"
+      },
+      "publication_mapping": [
+        "Table 5",
+        "Figure 3"
+      ],
+      "backend": "cupy_cuda",
+      "supported_workflows": [
+        "reproduce",
+        "replay",
+        "render"
+      ],
+      "readiness": "requires_external_inputs_and_cuda",
+      "implementation_verification": "local_cpu_unit_tests_only",
+      "historical_identity_status": "not_certified_byte_identical"
+    },
+    {
+      "id": "ks-rbf-m1-n16384",
+      "problem": "ks",
+      "scientific": {
+        "backend": "cupy_cuda",
+        "reference_backend": "numpy_scipy_cpu",
+        "training_size": 16384,
+        "kernel": "rbf",
+        "memory_order": 1,
+        "reference_truncation": "1 <= |k| <= 48",
+        "alpha": 0.085,
+        "dt": 0.05,
+        "substeps": 10,
+        "contour_points": 32,
+        "closure_interpolation": 1,
+        "models": 10,
+        "split_index": 400000,
+        "training_starts": [
+          0,
+          25000,
+          50000,
+          75000,
+          100000,
+          125000,
+          150000,
+          175000,
+          200000,
+          225000
+        ],
+        "validation_length": 4000,
+        "validation_offsets": [
+          100,
+          575,
+          1050,
+          1525,
+          2000
+        ],
+        "validation_horizon": 2000,
+        "test_trials": 50,
+        "test_horizon": 2000,
+        "error_threshold": 0.25,
+        "lyapunov_exponent": 0.04,
+        "summary_ddof": 0,
+        "precision": "float64",
+        "solver": "eig_grouped",
+        "selected_solver": "eig",
+        "epsilon_log10_bounds": [
+          -3,
+          3
+        ],
+        "lambda_log10_bounds": [
+          -16,
+          0
+        ],
+        "epsilon_count": 13,
+        "lambda_count": 13,
+        "candidate_chunk": 13,
+        "input": "raw_v_thetaHat_history",
+        "target": "next_thetaHat",
+        "input_scaling": "identity",
+        "target_scaling": "identity",
+        "pca": false,
+        "data_identity": "aligned_ks_processed",
+        "selection": "maximum_validation_vpt_first_index_tie",
+        "raw_reference_sha256": "80d6bd17fe8717fff5c392ed02581ec09e4590ae4b461d811ec864d257463d84"
+      },
+      "publication_mapping": [
+        "Table 5"
+      ],
+      "backend": "cupy_cuda",
+      "supported_workflows": [
+        "reproduce",
+        "replay",
+        "render"
+      ],
+      "readiness": "requires_external_inputs_and_cuda",
+      "implementation_verification": "local_cpu_unit_tests_only",
+      "historical_identity_status": "not_certified_byte_identical"
+    },
+    {
+      "id": "ks-diffusion-maps-m0-n16384",
+      "problem": "ks",
+      "scientific": {
+        "backend": "cupy_cuda",
+        "reference_backend": "numpy_scipy_cpu",
+        "training_size": 16384,
+        "kernel": "diffusion_maps",
+        "memory_order": 0,
+        "reference_truncation": "1 <= |k| <= 48",
+        "alpha": 0.085,
+        "dt": 0.05,
+        "substeps": 10,
+        "contour_points": 32,
+        "closure_interpolation": 1,
+        "models": 10,
+        "split_index": 400000,
+        "training_starts": [
+          0,
+          25000,
+          50000,
+          75000,
+          100000,
+          125000,
+          150000,
+          175000,
+          200000,
+          225000
+        ],
+        "validation_length": 4000,
+        "validation_offsets": [
+          100,
+          575,
+          1050,
+          1525,
+          2000
+        ],
+        "validation_horizon": 2000,
+        "test_trials": 50,
+        "test_horizon": 2000,
+        "error_threshold": 0.25,
+        "lyapunov_exponent": 0.04,
+        "summary_ddof": 0,
+        "precision": "float64",
+        "solver": "eig_grouped",
+        "selected_solver": "eig",
+        "epsilon_log10_bounds": [
+          -3,
+          3
+        ],
+        "lambda_log10_bounds": [
+          -16,
+          0
+        ],
+        "epsilon_count": 13,
+        "lambda_count": 13,
+        "candidate_chunk": 13,
+        "input": "raw_v_thetaHat_history",
+        "target": "next_thetaHat",
+        "input_scaling": "identity",
+        "target_scaling": "identity",
+        "pca": false,
+        "data_identity": "aligned_ks_processed",
+        "selection": "maximum_validation_vpt_first_index_tie",
+        "raw_reference_sha256": "80d6bd17fe8717fff5c392ed02581ec09e4590ae4b461d811ec864d257463d84"
+      },
+      "publication_mapping": [
+        "Table 5",
+        "Figure 3",
+        "Figure 1",
+        "Figure 2"
+      ],
+      "backend": "cupy_cuda",
+      "supported_workflows": [
+        "reproduce",
+        "replay",
+        "render"
+      ],
+      "readiness": "requires_external_inputs_and_cuda",
+      "implementation_verification": "local_cpu_unit_tests_only",
+      "historical_identity_status": "not_certified_byte_identical"
+    },
+    {
+      "id": "ks-diffusion-maps-m1-n16384",
+      "problem": "ks",
+      "scientific": {
+        "backend": "cupy_cuda",
+        "reference_backend": "numpy_scipy_cpu",
+        "training_size": 16384,
+        "kernel": "diffusion_maps",
+        "memory_order": 1,
+        "reference_truncation": "1 <= |k| <= 48",
+        "alpha": 0.085,
+        "dt": 0.05,
+        "substeps": 10,
+        "contour_points": 32,
+        "closure_interpolation": 1,
+        "models": 10,
+        "split_index": 400000,
+        "training_starts": [
+          0,
+          25000,
+          50000,
+          75000,
+          100000,
+          125000,
+          150000,
+          175000,
+          200000,
+          225000
+        ],
+        "validation_length": 4000,
+        "validation_offsets": [
+          100,
+          575,
+          1050,
+          1525,
+          2000
+        ],
+        "validation_horizon": 2000,
+        "test_trials": 50,
+        "test_horizon": 2000,
+        "error_threshold": 0.25,
+        "lyapunov_exponent": 0.04,
+        "summary_ddof": 0,
+        "precision": "float64",
+        "solver": "eig_grouped",
+        "selected_solver": "eig",
+        "epsilon_log10_bounds": [
+          -3,
+          3
+        ],
+        "lambda_log10_bounds": [
+          -16,
+          0
+        ],
+        "epsilon_count": 13,
+        "lambda_count": 13,
+        "candidate_chunk": 13,
+        "input": "raw_v_thetaHat_history",
+        "target": "next_thetaHat",
+        "input_scaling": "identity",
+        "target_scaling": "identity",
+        "pca": false,
+        "data_identity": "aligned_ks_processed",
+        "selection": "maximum_validation_vpt_first_index_tie",
+        "raw_reference_sha256": "80d6bd17fe8717fff5c392ed02581ec09e4590ae4b461d811ec864d257463d84"
+      },
+      "publication_mapping": [
+        "Table 5"
+      ],
+      "backend": "cupy_cuda",
+      "supported_workflows": [
+        "reproduce",
+        "replay",
+        "render"
+      ],
+      "readiness": "requires_external_inputs_and_cuda",
+      "implementation_verification": "local_cpu_unit_tests_only",
+      "historical_identity_status": "not_certified_byte_identical"
+    },
+    {
+      "id": "kinetic-global-type-i",
+      "problem": "kinetic",
+      "scientific": {
+        "backend": "numpy_scipy_cpu",
+        "model": "global",
+        "representation": "global",
+        "centers": 8208,
+        "kernel": "rbf",
+        "precision": "float64",
+        "Nx": 256,
+        "Nv": 128,
+        "dx": 0.0078125,
+        "dt": 0.000439453125,
+        "intervals": 455,
+        "knudsen": 0.001,
+        "target": "stage_weighted_transport_flux_difference",
+        "pca_rank": 768,
+        "pca_whiten": false,
+        "normalization": "type_i_nodes_1_through_454",
+        "figure_case": "validation_II_VIIB_06",
+        "protected_per_family": 24,
+        "summary_ddof": 0,
+        "initial_correction": "exact_interval_zero",
+        "solver": "evd",
+        "fit_residual_limit": 1e-06,
+        "epsilon_50": 3.7638921478642073,
+        "selected_model_id": "global_I_only_a5f6e2372a252f97836f326a",
+        "kernel_epsilon": 11.902472054474162,
+        "lambda_reg": 0.01778279410038923,
+        "aq": 2,
+        "bq": -7,
+        "training_data": "type_i",
+        "x_domain": [
+          -1,
+          1
+        ],
+        "v_domain": [
+          -8,
+          8
+        ],
+        "theta_x": 2,
+        "theta_v": 2,
+        "butcher_table": 2,
+        "boundary": "periodic",
+        "stage_advection_mode": "corrected",
+        "equilibrium_mode": "discrete_mieussens",
+        "equilibrium_options": {
+          "absolute_tolerance": 2e-13,
+          "relative_tolerance": 2e-12,
+          "maximum_iterations": 50,
+          "maximum_backtracks": 30,
+          "armijo_parameter": 0.0001,
+          "minimum_step": 9.313225746154785e-10,
+          "condition_limit": 1e+16
+        },
+        "kernel_convention": "exp(-squared_distance/(4*epsilon))",
+        "ridge_convention": "K + lambda_reg*I",
+        "stencil_cells": 10,
+        "difference_count": 9,
+        "difference_scaling": "(U[i+1]-U[i])/dx",
+        "data_identity": "frozen_kinetic_preprocessing",
+        "membership_sha256": {
+          "training_manifest.csv": "3770837c61e8f37308b5db5960662cbccf89f31ff5b38e367af74f1b9b6eb417",
+          "validation_manifest.csv": "a895426b30faa33f00377d5cc0d1ca6a2bec60c36e35ce2ad1e7154db8253ca4",
+          "protected_membership_manifest.csv": "ec55ccdc0873087ea8faff74295f18385e8f3413cc82ec1a25b4d756b999ee9a"
+        }
+      },
+      "publication_mapping": [
+        "Table 4"
+      ],
+      "backend": "numpy_scipy_cpu",
+      "supported_workflows": [
+        "reproduce",
+        "replay",
+        "render"
+      ],
+      "readiness": "requires_external_inputs",
+      "implementation_verification": "local_cpu_unit_tests_only",
+      "historical_identity_status": "not_certified_byte_identical"
+    },
+    {
+      "id": "kinetic-global-type-i-plus-type-ii",
+      "problem": "kinetic",
+      "scientific": {
+        "backend": "numpy_scipy_cpu",
+        "model": "global",
+        "representation": "global",
+        "centers": 8208,
+        "kernel": "rbf",
+        "precision": "float64",
+        "Nx": 256,
+        "Nv": 128,
+        "dx": 0.0078125,
+        "dt": 0.000439453125,
+        "intervals": 455,
+        "knudsen": 0.001,
+        "target": "stage_weighted_transport_flux_difference",
+        "pca_rank": 768,
+        "pca_whiten": false,
+        "normalization": "type_i_nodes_1_through_454",
+        "figure_case": "validation_II_VIIB_06",
+        "protected_per_family": 24,
+        "summary_ddof": 0,
+        "initial_correction": "exact_interval_zero",
+        "solver": "evd",
+        "fit_residual_limit": 1e-06,
+        "epsilon_50": 6.967760496784711,
+        "selected_model_id": "global_mixed_785509b548de65e04f296124",
+        "kernel_epsilon": 696.7760496784712,
+        "lambda_reg": 1e-05,
+        "aq": 8,
+        "bq": -20,
+        "training_data": "type_i_plus_type_ii",
+        "x_domain": [
+          -1,
+          1
+        ],
+        "v_domain": [
+          -8,
+          8
+        ],
+        "theta_x": 2,
+        "theta_v": 2,
+        "butcher_table": 2,
+        "boundary": "periodic",
+        "stage_advection_mode": "corrected",
+        "equilibrium_mode": "discrete_mieussens",
+        "equilibrium_options": {
+          "absolute_tolerance": 2e-13,
+          "relative_tolerance": 2e-12,
+          "maximum_iterations": 50,
+          "maximum_backtracks": 30,
+          "armijo_parameter": 0.0001,
+          "minimum_step": 9.313225746154785e-10,
+          "condition_limit": 1e+16
+        },
+        "kernel_convention": "exp(-squared_distance/(4*epsilon))",
+        "ridge_convention": "K + lambda_reg*I",
+        "stencil_cells": 10,
+        "difference_count": 9,
+        "difference_scaling": "(U[i+1]-U[i])/dx",
+        "data_identity": "frozen_kinetic_preprocessing",
+        "membership_sha256": {
+          "training_manifest.csv": "3770837c61e8f37308b5db5960662cbccf89f31ff5b38e367af74f1b9b6eb417",
+          "validation_manifest.csv": "a895426b30faa33f00377d5cc0d1ca6a2bec60c36e35ce2ad1e7154db8253ca4",
+          "protected_membership_manifest.csv": "ec55ccdc0873087ea8faff74295f18385e8f3413cc82ec1a25b4d756b999ee9a"
+        }
+      },
+      "publication_mapping": [
+        "Table 4",
+        "Figures 4-8"
+      ],
+      "backend": "numpy_scipy_cpu",
+      "supported_workflows": [
+        "reproduce",
+        "replay",
+        "render"
+      ],
+      "readiness": "requires_external_inputs",
+      "implementation_verification": "local_cpu_unit_tests_only",
+      "historical_identity_status": "not_certified_byte_identical"
+    },
+    {
+      "id": "kinetic-zeroth-order-local-type-i",
+      "problem": "kinetic",
+      "scientific": {
+        "backend": "numpy_scipy_cpu",
+        "model": "zeroth_order_local",
+        "representation": "U30",
+        "centers": 4032,
+        "kernel": "rbf",
+        "precision": "float64",
+        "Nx": 256,
+        "Nv": 128,
+        "dx": 0.0078125,
+        "dt": 0.000439453125,
+        "intervals": 455,
+        "knudsen": 0.001,
+        "target": "stage_weighted_transport_flux_difference",
+        "pca_rank": 768,
+        "pca_whiten": false,
+        "normalization": "type_i_nodes_1_through_454",
+        "figure_case": "validation_II_VIIB_06",
+        "protected_per_family": 24,
+        "summary_ddof": 0,
+        "initial_correction": "exact_interval_zero",
+        "solver": "evd",
+        "fit_residual_limit": 1e-06,
+        "epsilon_50": 29.53231481793101,
+        "selected_model_id": "U30_I_only_766ad7b20b374c59d41732e1",
+        "kernel_epsilon": 295.3231481793101,
+        "lambda_reg": 0.00017782794100389227,
+        "aq": 4,
+        "bq": -15,
+        "training_data": "type_i",
+        "x_domain": [
+          -1,
+          1
+        ],
+        "v_domain": [
+          -8,
+          8
+        ],
+        "theta_x": 2,
+        "theta_v": 2,
+        "butcher_table": 2,
+        "boundary": "periodic",
+        "stage_advection_mode": "corrected",
+        "equilibrium_mode": "discrete_mieussens",
+        "equilibrium_options": {
+          "absolute_tolerance": 2e-13,
+          "relative_tolerance": 2e-12,
+          "maximum_iterations": 50,
+          "maximum_backtracks": 30,
+          "armijo_parameter": 0.0001,
+          "minimum_step": 9.313225746154785e-10,
+          "condition_limit": 1e+16
+        },
+        "kernel_convention": "exp(-squared_distance/(4*epsilon))",
+        "ridge_convention": "K + lambda_reg*I",
+        "stencil_cells": 10,
+        "difference_count": 9,
+        "difference_scaling": "(U[i+1]-U[i])/dx",
+        "data_identity": "frozen_kinetic_preprocessing",
+        "membership_sha256": {
+          "training_manifest.csv": "3770837c61e8f37308b5db5960662cbccf89f31ff5b38e367af74f1b9b6eb417",
+          "validation_manifest.csv": "a895426b30faa33f00377d5cc0d1ca6a2bec60c36e35ce2ad1e7154db8253ca4",
+          "protected_membership_manifest.csv": "ec55ccdc0873087ea8faff74295f18385e8f3413cc82ec1a25b4d756b999ee9a"
+        }
+      },
+      "publication_mapping": [
+        "Table 4"
+      ],
+      "backend": "numpy_scipy_cpu",
+      "supported_workflows": [
+        "reproduce",
+        "replay",
+        "render"
+      ],
+      "readiness": "requires_external_inputs",
+      "implementation_verification": "local_cpu_unit_tests_only",
+      "historical_identity_status": "not_certified_byte_identical"
+    },
+    {
+      "id": "kinetic-zeroth-order-local-type-i-plus-type-ii",
+      "problem": "kinetic",
+      "scientific": {
+        "backend": "numpy_scipy_cpu",
+        "model": "zeroth_order_local",
+        "representation": "U30",
+        "centers": 4032,
+        "kernel": "rbf",
+        "precision": "float64",
+        "Nx": 256,
+        "Nv": 128,
+        "dx": 0.0078125,
+        "dt": 0.000439453125,
+        "intervals": 455,
+        "knudsen": 0.001,
+        "target": "stage_weighted_transport_flux_difference",
+        "pca_rank": 768,
+        "pca_whiten": false,
+        "normalization": "type_i_nodes_1_through_454",
+        "figure_case": "validation_II_VIIB_06",
+        "protected_per_family": 24,
+        "summary_ddof": 0,
+        "initial_correction": "exact_interval_zero",
+        "solver": "evd",
+        "fit_residual_limit": 1e-06,
+        "epsilon_50": 33.46411602534008,
+        "selected_model_id": "U30_mixed_58ce5aaa903185fd271d32cf",
+        "kernel_epsilon": 3346.411602534008,
+        "lambda_reg": 1.778279410038923e-06,
+        "aq": 8,
+        "bq": -23,
+        "training_data": "type_i_plus_type_ii",
+        "x_domain": [
+          -1,
+          1
+        ],
+        "v_domain": [
+          -8,
+          8
+        ],
+        "theta_x": 2,
+        "theta_v": 2,
+        "butcher_table": 2,
+        "boundary": "periodic",
+        "stage_advection_mode": "corrected",
+        "equilibrium_mode": "discrete_mieussens",
+        "equilibrium_options": {
+          "absolute_tolerance": 2e-13,
+          "relative_tolerance": 2e-12,
+          "maximum_iterations": 50,
+          "maximum_backtracks": 30,
+          "armijo_parameter": 0.0001,
+          "minimum_step": 9.313225746154785e-10,
+          "condition_limit": 1e+16
+        },
+        "kernel_convention": "exp(-squared_distance/(4*epsilon))",
+        "ridge_convention": "K + lambda_reg*I",
+        "stencil_cells": 10,
+        "difference_count": 9,
+        "difference_scaling": "(U[i+1]-U[i])/dx",
+        "data_identity": "frozen_kinetic_preprocessing",
+        "membership_sha256": {
+          "training_manifest.csv": "3770837c61e8f37308b5db5960662cbccf89f31ff5b38e367af74f1b9b6eb417",
+          "validation_manifest.csv": "a895426b30faa33f00377d5cc0d1ca6a2bec60c36e35ce2ad1e7154db8253ca4",
+          "protected_membership_manifest.csv": "ec55ccdc0873087ea8faff74295f18385e8f3413cc82ec1a25b4d756b999ee9a"
+        }
+      },
+      "publication_mapping": [
+        "Table 4",
+        "Figures 4-8"
+      ],
+      "backend": "numpy_scipy_cpu",
+      "supported_workflows": [
+        "reproduce",
+        "replay",
+        "render"
+      ],
+      "readiness": "requires_external_inputs",
+      "implementation_verification": "local_cpu_unit_tests_only",
+      "historical_identity_status": "not_certified_byte_identical"
+    },
+    {
+      "id": "kinetic-first-order-local-baseline-type-i-residual-type-i",
+      "problem": "kinetic",
+      "scientific": {
+        "backend": "numpy_scipy_cpu",
+        "model": "first_order_local",
+        "representation": "DU27",
+        "centers": 8064,
+        "kernel": "rbf",
+        "precision": "float64",
+        "Nx": 256,
+        "Nv": 128,
+        "dx": 0.0078125,
+        "dt": 0.000439453125,
+        "intervals": 455,
+        "knudsen": 0.001,
+        "target": "stage_weighted_transport_flux_difference",
+        "pca_rank": 768,
+        "pca_whiten": false,
+        "normalization": "type_i_nodes_1_through_454",
+        "figure_case": "validation_II_VIIB_06",
+        "protected_per_family": 24,
+        "summary_ddof": 0,
+        "initial_correction": "exact_interval_zero",
+        "solver": "evd",
+        "fit_residual_limit": 1e-06,
+        "epsilon_50": 14.19206164817638,
+        "selected_model_id": "DU27_I_only_d856c31e1841e37fa90e4e67",
+        "kernel_epsilon": 4.48792395017606,
+        "lambda_reg": 0.0031622776601683794,
+        "aq": -2,
+        "bq": -10,
+        "baseline": {
+          "model": "zeroth_order_local",
+          "training_data": "type_i",
+          "centers": 4032,
+          "kernel_epsilon": 2953.231481793101,
+          "lambda_reg": 1e-06,
+          "solver": "cholesky"
+        },
+        "residual": {
+          "training_data": "type_i"
+        },
+        "x_domain": [
+          -1,
+          1
+        ],
+        "v_domain": [
+          -8,
+          8
+        ],
+        "theta_x": 2,
+        "theta_v": 2,
+        "butcher_table": 2,
+        "boundary": "periodic",
+        "stage_advection_mode": "corrected",
+        "equilibrium_mode": "discrete_mieussens",
+        "equilibrium_options": {
+          "absolute_tolerance": 2e-13,
+          "relative_tolerance": 2e-12,
+          "maximum_iterations": 50,
+          "maximum_backtracks": 30,
+          "armijo_parameter": 0.0001,
+          "minimum_step": 9.313225746154785e-10,
+          "condition_limit": 1e+16
+        },
+        "kernel_convention": "exp(-squared_distance/(4*epsilon))",
+        "ridge_convention": "K + lambda_reg*I",
+        "stencil_cells": 10,
+        "difference_count": 9,
+        "difference_scaling": "(U[i+1]-U[i])/dx",
+        "data_identity": "frozen_kinetic_preprocessing",
+        "membership_sha256": {
+          "training_manifest.csv": "3770837c61e8f37308b5db5960662cbccf89f31ff5b38e367af74f1b9b6eb417",
+          "validation_manifest.csv": "a895426b30faa33f00377d5cc0d1ca6a2bec60c36e35ce2ad1e7154db8253ca4",
+          "protected_membership_manifest.csv": "ec55ccdc0873087ea8faff74295f18385e8f3413cc82ec1a25b4d756b999ee9a"
+        }
+      },
+      "publication_mapping": [
+        "Table 4"
+      ],
+      "backend": "numpy_scipy_cpu",
+      "supported_workflows": [
+        "reproduce",
+        "replay",
+        "render"
+      ],
+      "readiness": "requires_external_inputs",
+      "implementation_verification": "local_cpu_unit_tests_only",
+      "historical_identity_status": "not_certified_byte_identical"
+    },
+    {
+      "id": "kinetic-first-order-local-baseline-type-i-residual-type-i-plus-type-ii",
+      "problem": "kinetic",
+      "scientific": {
+        "backend": "numpy_scipy_cpu",
+        "model": "first_order_local",
+        "representation": "DU27",
+        "centers": 8064,
+        "kernel": "rbf",
+        "precision": "float64",
+        "Nx": 256,
+        "Nv": 128,
+        "dx": 0.0078125,
+        "dt": 0.000439453125,
+        "intervals": 455,
+        "knudsen": 0.001,
+        "target": "stage_weighted_transport_flux_difference",
+        "pca_rank": 768,
+        "pca_whiten": false,
+        "normalization": "type_i_nodes_1_through_454",
+        "figure_case": "validation_II_VIIB_06",
+        "protected_per_family": 24,
+        "summary_ddof": 0,
+        "initial_correction": "exact_interval_zero",
+        "solver": "evd",
+        "fit_residual_limit": 1e-06,
+        "epsilon_50": 16.681528204989124,
+        "selected_model_id": "DU27_mixed_e195d7f1381318c792fa6fe5",
+        "kernel_epsilon": 16.681528204989124,
+        "lambda_reg": 0.01,
+        "aq": 0,
+        "bq": -8,
+        "baseline": {
+          "model": "zeroth_order_local",
+          "training_data": "type_i",
+          "centers": 4032,
+          "kernel_epsilon": 2953.231481793101,
+          "lambda_reg": 1e-06,
+          "solver": "cholesky"
+        },
+        "residual": {
+          "training_data": "type_i_plus_type_ii"
+        },
+        "x_domain": [
+          -1,
+          1
+        ],
+        "v_domain": [
+          -8,
+          8
+        ],
+        "theta_x": 2,
+        "theta_v": 2,
+        "butcher_table": 2,
+        "boundary": "periodic",
+        "stage_advection_mode": "corrected",
+        "equilibrium_mode": "discrete_mieussens",
+        "equilibrium_options": {
+          "absolute_tolerance": 2e-13,
+          "relative_tolerance": 2e-12,
+          "maximum_iterations": 50,
+          "maximum_backtracks": 30,
+          "armijo_parameter": 0.0001,
+          "minimum_step": 9.313225746154785e-10,
+          "condition_limit": 1e+16
+        },
+        "kernel_convention": "exp(-squared_distance/(4*epsilon))",
+        "ridge_convention": "K + lambda_reg*I",
+        "stencil_cells": 10,
+        "difference_count": 9,
+        "difference_scaling": "(U[i+1]-U[i])/dx",
+        "data_identity": "frozen_kinetic_preprocessing",
+        "membership_sha256": {
+          "training_manifest.csv": "3770837c61e8f37308b5db5960662cbccf89f31ff5b38e367af74f1b9b6eb417",
+          "validation_manifest.csv": "a895426b30faa33f00377d5cc0d1ca6a2bec60c36e35ce2ad1e7154db8253ca4",
+          "protected_membership_manifest.csv": "ec55ccdc0873087ea8faff74295f18385e8f3413cc82ec1a25b4d756b999ee9a"
+        }
+      },
+      "publication_mapping": [
+        "Table 4",
+        "Figures 4-8"
+      ],
+      "backend": "numpy_scipy_cpu",
+      "supported_workflows": [
+        "reproduce",
+        "replay",
+        "render"
+      ],
+      "readiness": "requires_external_inputs",
+      "implementation_verification": "local_cpu_unit_tests_only",
+      "historical_identity_status": "not_certified_byte_identical"
+    }
+  ]
+}

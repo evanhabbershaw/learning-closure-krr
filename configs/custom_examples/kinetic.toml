@@ -1,0 +1,3 @@
+extends = "kinetic-zeroth-order-local-type-i"
+[scientific]
+kernel_epsilon = 100.0

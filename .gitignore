@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.DS_Store
+runs/
+external/
+*.npy
+*.npz
+*.mat
+*.pkl
+*.pickle
+*.tgz

@@ -1,0 +1,12 @@
+{
+  "python": "3.13.7",
+  "system": "Darwin",
+  "machine": "arm64",
+  "packages": {
+    "numpy": "2.5.1",
+    "scipy": "1.18.0",
+    "pytest": "9.1.1",
+    "matplotlib": "3.11.0"
+  },
+  "cupy_available": false
+}

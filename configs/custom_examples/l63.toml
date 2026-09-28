@@ -1,0 +1,3 @@
+extends = "l63-rbf-rk4-cubic-n512"
+[scientific]
+training_size = 1536

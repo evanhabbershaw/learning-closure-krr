@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "assets": [
+    {
+      "path": "ks/raw/ks0p01.mat",
+      "sha256": "80d6bd17fe8717fff5c392ed02581ec09e4590ae4b461d811ec864d257463d84",
+      "bundled": false,
+      "source": "assembly_source_map",
+      "availability": "obtain_separately"
+    },
+    {
+      "path": "ks/processed/ks6_closure_phys14.npz",
+      "sha256": null,
+      "bundled": false,
+      "source": "assembly_source_map",
+      "availability": "obtain_separately"
+    },
+    {
+      "path": "l63/l63_protocol_bundle.tgz",
+      "sha256": "7c5ed13c95c57cd17d38277c41fc5cad98c2a48ae904d6053413a5f84f452f9f",
+      "bundled": false,
+      "source": "assembly_source_map",
+      "availability": "obtain_separately"
+    },
+    {
+      "path": "kinetic/preprocessing/DU27_I_only_features.npy",
+      "sha256": "64eefefc135497cbae0dae8ac6ed8d8f72f0d99f63af08a6e9f5ab94f534a13d",
+      "bundled": false,
+      "source": "assembly_source_map",
+      "availability": "obtain_separately"
+    },
+    {
+      "path": "kinetic/preprocessing/DU27_mixed_features.npy",
+      "sha256": "047b546a51ca393e06b94ab80ba4ada1f962bec0775b8e652a3a0cafadc898d7",
+      "bundled": false,
+      "source": "assembly_source_map",
+      "availability": "obtain_separately"
+    },
+    {
+      "path": "kinetic/preprocessing/U30_I_only_features.npy",
+      "sha256": "06d9bf56a07b8a9719d151d82838d30cb5e99bc39c38bf512222e4a451cb9ca3",
+      "bundled": false,
+      "source": "assembly_source_map",
+      "availability": "obtain_separately"
+    },
+    {
+      "path": "kinetic/preprocessing/U30_I_only_targets.npy",
+      "sha256": "1ae93fe4bcff87451adff0adb39f4c60064bc2e54b3d0ac976275b9b05e68123",
+      "bundled": false,
+      "source": "assembly_source_map",
+      "availability": "obtain_separately"
+    },
+    {
+      "path": "kinetic/preprocessing/U30_mixed_features.npy",
+      "sha256": "d949ed69aabde0abc43f1952cfc5ebef5db0665f7e1e97a59116dc93cf06086c",
+      "bundled": false,
+      "source": "assembly_source_map",
+      "availability": "obtain_separately"
+    },
+    {
+      "path": "kinetic/preprocessing/U30_mixed_targets.npy",
+      "sha256": "5212d80f834d54a4960f2af6f1ddcf4d78e663913855c3d729de626a687cb9a8",
+      "bundled": false,
+      "source": "assembly_source_map",
+      "availability": "obtain_separately"
+    },
+    {
+      "path": "kinetic/preprocessing/global_I_only_features.npy",
+      "sha256": "b726769a29b0c85563e5b4e5751532c5be8e88c3165437b1bbd6d28917dda1ca",
+      "bundled": false,
+      "source": "assembly_source_map",
+      "availability": "obtain_separately"
+    },
+    {
+      "path": "kinetic/preprocessing/global_I_only_targets.npy",
+      "sha256": "06f17cfd874b290f34b35b6798d31c273a121de621362c6708bc08ae012cfca6",
+      "bundled": false,
+      "source": "assembly_source_map",
+      "availability": "obtain_separately"
+    },
+    {
+      "path": "kinetic/preprocessing/global_mixed_features.npy",
+      "sha256": "6fc19d39d554d51ca88224a32f5d93407f077c4836cd0481106d91c04ec9f5a3",
+      "bundled": false,
+      "source": "assembly_source_map",
+      "availability": "obtain_separately"
+    },
+    {
+      "path": "kinetic/preprocessing/global_mixed_targets.npy",
+      "sha256": "fb7240eeb97dad1ec0ad6eb97340863abcfbfb01085b7ca327b01d4b39300ad5",
+      "bundled": false,
+      "source": "assembly_source_map",
+      "availability": "obtain_separately"
+    },
+    {
+      "path": "kinetic/preprocessing/global_pca.npz",
+      "sha256": "0f5aad7a0151880ec27178f8385bdf3d89dd1d9ff2c339c21a8db423ec9e2f0f",
+      "bundled": false,
+      "source": "assembly_source_map",
+      "availability": "obtain_separately"
+    },
+    {
+      "path": "kinetic/preprocessing/normalizers.npz",
+      "sha256": "3c1fffef4134343f34a6e806e3d8fa8c89857def680530543211bb63f4a583c3",
+      "bundled": false,
+      "source": "assembly_source_map",
+      "availability": "obtain_separately"
+    }
+  ]
+}
