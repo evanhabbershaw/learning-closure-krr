@@ -81,8 +81,9 @@ work [14]; neural-network implementation code is not duplicated here. Reference
 [14]: Harlim, Jiang, Liang and Yang, “Machine learning for prediction with missing
 dynamics,” *Journal of Computational Physics* 428 (2021), 109922.
 
-Run the local CPU checks with `python -m pytest -q`. See
-[ASSEMBLY_REPORT.md](ASSEMBLY_REPORT.md) for checks actually performed and remaining
-publication blockers. No software license has been selected. Implementation
-ownership and redistribution decisions remain listed in
-[THIRD_PARTY_NOTICES_PENDING.md](THIRD_PARTY_NOTICES_PENDING.md).
+Run the local CPU checks with `python -m pytest -q`. Release-time
+verification details and known capability limits are summarized in
+[REPRODUCIBILITY.md](REPRODUCIBILITY.md) and [ENVIRONMENT.md](ENVIRONMENT.md).
+Source-provenance and attribution notes are provided in
+[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). No explicit software license is
+currently included with this repository.

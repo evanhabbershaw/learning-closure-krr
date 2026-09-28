@@ -120,6 +120,6 @@ Run `python -m pytest -q` and `python -m compileall -q .`. CPU tests cover regis
 membership, paper/custom resolution, import safety, conservative macroscopic
 steps, the absence of transitive equilibrium dependencies, reference equilibrium
 moments, stencil differences, literal ridge, PCA conventions and metrics.
-ASSEMBLY_REPORT.md records the actual final check counts. Tests use small synthetic
+Release-time tests use small synthetic
 arrays; they do not replace full scientific reproduction. CUDA workflows, large
 external-input paths and production-scale construction remain unexecuted locally.
